@@ -1,0 +1,6 @@
+framework module Pods_BitBeca_BitBecaUITests {
+  umbrella header "Pods-BitBeca-BitBecaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

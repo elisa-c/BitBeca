@@ -15,6 +15,9 @@
 		1CC1E1342625DDFD00AB7714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */; };
 		1CC1E13F2625DDFE00AB7714 /* BitBecaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E13E2625DDFE00AB7714 /* BitBecaTests.swift */; };
 		1CC1E14A2625DDFE00AB7714 /* BitBecaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */; };
+		5001C92B26B5FE952E25CE0D /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8DBB1A7EE92EB3BD1F4BC5 /* Pods_BitBeca_BitBecaUITests.framework */; };
+		94C0987761BA13148B52CD59 /* Pods_BitBeca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F82AD27DAED90878FCC36C9 /* Pods_BitBeca.framework */; };
+		DA62B6D6374D95054DACB695 /* Pods_BitBecaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24222A126A5B8E67820B4BC7 /* Pods_BitBecaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		1CC1E1452625DDFE00AB7714 /* BitBecaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBecaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBecaUITests.swift; sourceTree = "<group>"; };
 		1CC1E14B2625DDFE00AB7714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24222A126A5B8E67820B4BC7 /* Pods_BitBecaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBecaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D81CADA7DD0D0AB7D454CD /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C77BCCA975F66972138AA44 /* Pods-BitBecaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.release.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.release.xcconfig"; sourceTree = "<group>"; };
+		707381D21CAB4FAB82D187FE /* Pods-BitBeca-BitBecaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.release.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F82AD27DAED90878FCC36C9 /* Pods_BitBeca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25D07CEBAC6C12B06D53BDA /* Pods-BitBecaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.debug.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D666F581DD45A2C322E26059 /* Pods-BitBeca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.debug.xcconfig"; sourceTree = "<group>"; };
+		DA8DBB1A7EE92EB3BD1F4BC5 /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca_BitBecaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F949EE1E248B1763EA46E1D2 /* Pods-BitBeca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.release.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C0987761BA13148B52CD59 /* Pods_BitBeca.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA62B6D6374D95054DACB695 /* Pods_BitBecaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5001C92B26B5FE952E25CE0D /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				1CC1E13D2625DDFE00AB7714 /* BitBecaTests */,
 				1CC1E1482625DDFE00AB7714 /* BitBecaUITests */,
 				1CC1E1252625DDFA00AB7714 /* Products */,
+				B1457E20E11E7BC4423E67F3 /* Pods */,
+				25C51F4C67791CB038BA54FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = BitBecaUITests;
 			sourceTree = "<group>";
 		};
+		25C51F4C67791CB038BA54FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F82AD27DAED90878FCC36C9 /* Pods_BitBeca.framework */,
+				DA8DBB1A7EE92EB3BD1F4BC5 /* Pods_BitBeca_BitBecaUITests.framework */,
+				24222A126A5B8E67820B4BC7 /* Pods_BitBecaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1457E20E11E7BC4423E67F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D666F581DD45A2C322E26059 /* Pods-BitBeca.debug.xcconfig */,
+				F949EE1E248B1763EA46E1D2 /* Pods-BitBeca.release.xcconfig */,
+				36D81CADA7DD0D0AB7D454CD /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */,
+				707381D21CAB4FAB82D187FE /* Pods-BitBeca-BitBecaUITests.release.xcconfig */,
+				D25D07CEBAC6C12B06D53BDA /* Pods-BitBecaTests.debug.xcconfig */,
+				4C77BCCA975F66972138AA44 /* Pods-BitBecaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1E14E2625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBeca" */;
 			buildPhases = (
+				DC1F86688DD9ECD41755BDDE /* [CP] Check Pods Manifest.lock */,
 				1CC1E1202625DDFA00AB7714 /* Sources */,
 				1CC1E1212625DDFA00AB7714 /* Frameworks */,
 				1CC1E1222625DDFA00AB7714 /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1E1512625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaTests" */;
 			buildPhases = (
+				937F502D96B0496B48ED9E03 /* [CP] Check Pods Manifest.lock */,
 				1CC1E1362625DDFE00AB7714 /* Sources */,
 				1CC1E1372625DDFE00AB7714 /* Frameworks */,
 				1CC1E1382625DDFE00AB7714 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1E1542625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaUITests" */;
 			buildPhases = (
+				71E86009EA9F926B55A1A1C0 /* [CP] Check Pods Manifest.lock */,
 				1CC1E1412625DDFE00AB7714 /* Sources */,
 				1CC1E1422625DDFE00AB7714 /* Frameworks */,
 				1CC1E1432625DDFE00AB7714 /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71E86009EA9F926B55A1A1C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBeca-BitBecaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937F502D96B0496B48ED9E03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBecaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1F86688DD9ECD41755BDDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBeca-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CC1E1202625DDFA00AB7714 /* Sources */ = {
@@ -433,6 +546,7 @@
 		};
 		1CC1E14F2625DDFE00AB7714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D666F581DD45A2C322E26059 /* Pods-BitBeca.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +565,7 @@
 		};
 		1CC1E1502625DDFE00AB7714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F949EE1E248B1763EA46E1D2 /* Pods-BitBeca.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +584,7 @@
 		};
 		1CC1E1522625DDFE00AB7714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25D07CEBAC6C12B06D53BDA /* Pods-BitBecaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +606,7 @@
 		};
 		1CC1E1532625DDFE00AB7714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C77BCCA975F66972138AA44 /* Pods-BitBecaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +628,7 @@
 		};
 		1CC1E1552625DDFE00AB7714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D81CADA7DD0D0AB7D454CD /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +648,7 @@
 		};
 		1CC1E1562625DDFE00AB7714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707381D21CAB4FAB82D187FE /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
