@@ -116,12 +116,12 @@
 		1CC1E1262625DDFA00AB7714 /* BitBeca */ = {
 			isa = PBXGroup;
 			children = (
-				1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */,
-				1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */,
-				1CC1E12B2625DDFA00AB7714 /* ViewController.swift */,
-				1CC1E12D2625DDFA00AB7714 /* Main.storyboard */,
+				6654EFBC262622DC00211E61 /* Application */,
+				6654EFB72626225300211E61 /* Model */,
+				6654EFB82626227200211E61 /* ViewModel */,
+				6654EFB92626228100211E61 /* View */,
+				6654EFBA262622A600211E61 /* Controller */,
 				1CC1E1302625DDFD00AB7714 /* Assets.xcassets */,
-				1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */,
 				1CC1E1352625DDFD00AB7714 /* Info.plist */,
 			);
 			path = BitBeca;
@@ -153,6 +153,54 @@
 				24222A126A5B8E67820B4BC7 /* Pods_BitBecaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6654EFB72626225300211E61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6654EFBB262622C300211E61 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6654EFB82626227200211E61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6654EFB92626228100211E61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */,
+				1CC1E12D2625DDFA00AB7714 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6654EFBA262622A600211E61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E12B2625DDFA00AB7714 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6654EFBB262622C300211E61 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		6654EFBC262622DC00211E61 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */,
+				1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		B1457E20E11E7BC4423E67F3 /* Pods */ = {

@@ -1,4 +1,4 @@
 excluded: 
-- BitBeca/AppDelegate.swift
-- BitBeca/SceneDelegate.swift
+- BitBeca/Application/AppDelegate.swift
+- BitBeca/Application/SceneDelegate.swift
 
