@@ -6,25 +6,51 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		082B3A43D57247F8D695ECC90BEB538E /* Pods-BitBeca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA707CB830DCB65A65A45A4AF9E1F01E /* Pods-BitBeca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DC50E454C45AA2F12B06E9F766283C1 /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCF5ECFD02D513AEE5A388DD66B29E6 /* Pods-BitBeca-BitBecaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE56347CAA432D8D3C25D7BA8A3D2E4 /* Pods-BitBeca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E969E3BFCB817F5D4FB4854A126AB38 /* Pods-BitBeca-dummy.m */; };
+		452C3DC40C55ADFE6863DA465B7D3E60 /* Pods-BitBeca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA707CB830DCB65A65A45A4AF9E1F01E /* Pods-BitBeca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65DE60CA59FDBF5CCC751F291FDF2A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		671BC16173A6F7D437E7F1F4EB047B2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6E5B4273FCB80177DEA06AD4C7CF38A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6E9353E68C460D6EE4F01277B3AA98C8 /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCF5ECFD02D513AEE5A388DD66B29E6 /* Pods-BitBeca-BitBecaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D1A2C62706E9EC4D0120778E0093572 /* Pods-BitBecaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB030A12B8E207B97723A2220F2CBA3 /* Pods-BitBecaTests-dummy.m */; };
 		950E453F83053358FE83DF3813A9C984 /* Pods-BitBecaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB490A0F43D12F6B0A50A9ED53697BD /* Pods-BitBecaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A53C4C7E0FAA049C771BA7C0F66E2AB8 /* Pods-BitBeca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E969E3BFCB817F5D4FB4854A126AB38 /* Pods-BitBeca-dummy.m */; };
-		B5AAB94FAA7E8FFB07EFE2D8D588FDD4 /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F411F563BCB9E1EFA3E6E4F2A90917C /* Pods-BitBeca-BitBecaUITests-dummy.m */; };
-		D30E546268A726595382A31B9801BB80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C07761698A766BB58321FD7B7EBE325F /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F411F563BCB9E1EFA3E6E4F2A90917C /* Pods-BitBeca-BitBecaUITests-dummy.m */; };
+		E4D3816C7AB65D28F76A111F224E65CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		99687C032240E2247C0FAFD616AF15EB /* PBXContainerItemProxy */ = {
+		2E0D5B6550D2B368BB52464A9F1A8434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		D783D5092073B142D247CAD4A7E69EF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EE8A2D97DE8FE54833753CF7A40E6453;
 			remoteInfo = "Pods-BitBeca";
+		};
+		E774E75123FCC5964BCA245DA1D35FF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,12 +62,14 @@
 		25728286E6D5E7DA14DBED3DD48D03AC /* Pods-BitBeca-BitBecaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-BitBecaUITests-Info.plist"; sourceTree = "<group>"; };
 		2EA96825DEA734168C63DCEB578116E2 /* Pods-BitBeca-BitBecaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-BitBecaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2EB490A0F43D12F6B0A50A9ED53697BD /* Pods-BitBecaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitBecaTests-umbrella.h"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		45CA523BC9C8033E79D66F6BCAE3FDFA /* Pods_BitBecaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitBecaTests.framework; path = "Pods-BitBecaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D4CF227C7E4B2E5FCA5AEB3ABB9074 /* Pods-BitBecaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitBecaTests.modulemap"; sourceTree = "<group>"; };
 		5D69748CA48ADBBCE5B86FD0EBEA4D2D /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitBeca_BitBecaUITests.framework; path = "Pods-BitBeca-BitBecaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EDD0846EAF2C2C25899FAA98410097 /* Pods-BitBeca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBeca.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		788995A5D69FBBFD832C349A79A5D7A8 /* Pods-BitBeca-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		7F411F563BCB9E1EFA3E6E4F2A90917C /* Pods-BitBeca-BitBecaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitBeca-BitBecaUITests-dummy.m"; sourceTree = "<group>"; };
 		85D79CB962C86EFC441694A5886999C1 /* Pods-BitBecaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitBecaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		88604AF3C02AA2E8F99259DC7D648429 /* Pods-BitBeca.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitBeca.modulemap"; sourceTree = "<group>"; };
@@ -61,27 +89,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		039BAEC5398D0C7BF3809313859E7FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D3816C7AB65D28F76A111F224E65CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272B71691BE84D28AE002CF0AC4A6201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5B4273FCB80177DEA06AD4C7CF38A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BB860350381F33770CC2550D303AF65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				65DE60CA59FDBF5CCC751F291FDF2A23 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8E22572500B4382E6F1CB5A67D25E2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				671BC16173A6F7D437E7F1F4EB047B2A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F878A2E009CB4E37A0814A772407DF7F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D30E546268A726595382A31B9801BB80 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +160,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		975BEC3650885021620CA5EA73C85331 /* Pods-BitBeca */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +215,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
 				0CC5CAC64F863F4B11EA15C143E6A097 /* Products */,
 				1D089EEC09D1488E45793DEB0CCA6C4B /* Targets Support Files */,
 			);
@@ -182,14 +229,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6B5839664E2F37DDEFA1E430FAE10FC0 /* Headers */ = {
+		036D0919F1B96FE7C8A974CDD2044BDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC50E454C45AA2F12B06E9F766283C1 /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */,
+				6E9353E68C460D6EE4F01277B3AA98C8 /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772C2D957F04F0033A4CB81B34BB9AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452C3DC40C55ADFE6863DA465B7D3E60 /* Pods-BitBeca-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,29 +265,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF0B55BC6C49A998705D814B0A8E78B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				082B3A43D57247F8D695ECC90BEB538E /* Pods-BitBeca-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		09A94BDCCC758D2ADBEAB9F8A9062103 /* Pods-BitBeca-BitBecaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D668E71B015FC463FD6F5E8CFA669335 /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */;
+			buildConfigurationList = 07AC005DC7F9C8FB06942B188E33ED29 /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */;
 			buildPhases = (
-				6B5839664E2F37DDEFA1E430FAE10FC0 /* Headers */,
-				CCA5E62D0BED5910D6A24865EB49FFBA /* Sources */,
-				A8E22572500B4382E6F1CB5A67D25E2C /* Frameworks */,
-				341DCA968B40E002AF4D17D815CA49E2 /* Resources */,
+				036D0919F1B96FE7C8A974CDD2044BDA /* Headers */,
+				0D70A7510A9D58933FE305D58F2B0FB0 /* Sources */,
+				272B71691BE84D28AE002CF0AC4A6201 /* Frameworks */,
+				97095CE933CC4759129FBCD27AAD8709 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				055578D4D445355871D96A12B7DC0EA1 /* PBXTargetDependency */,
 			);
 			name = "Pods-BitBeca-BitBecaUITests";
 			productName = "Pods-BitBeca-BitBecaUITests";
@@ -242,7 +299,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BE8AB6D440A95C2B200BD75A084426EB /* PBXTargetDependency */,
+				A3B49FCBAB9274718206B318D634F8D3 /* PBXTargetDependency */,
 			);
 			name = "Pods-BitBecaTests";
 			productName = "Pods-BitBecaTests";
@@ -251,16 +308,17 @@
 		};
 		EE8A2D97DE8FE54833753CF7A40E6453 /* Pods-BitBeca */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A606AE2286CA16AEDC86AFF1190CA69 /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */;
+			buildConfigurationList = DE111DE3F9CCD3765387F62D8F05A7A1 /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */;
 			buildPhases = (
-				EDF0B55BC6C49A998705D814B0A8E78B /* Headers */,
-				CECC85C4446E54AA8C23CED774755648 /* Sources */,
-				F878A2E009CB4E37A0814A772407DF7F /* Frameworks */,
-				3620229E5A0C0DEB0545297874E4B671 /* Resources */,
+				0772C2D957F04F0033A4CB81B34BB9AE /* Headers */,
+				616652B50E05BE7B9FD200D3F6825EAE /* Sources */,
+				039BAEC5398D0C7BF3809313859E7FBC /* Frameworks */,
+				FE7F8E75C65103601ACD06F7FC2DC454 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A485231C9BD986B15BA0C0643ED045E4 /* PBXTargetDependency */,
 			);
 			name = "Pods-BitBeca";
 			productName = "Pods-BitBeca";
@@ -292,6 +350,7 @@
 				EE8A2D97DE8FE54833753CF7A40E6453 /* Pods-BitBeca */,
 				09A94BDCCC758D2ADBEAB9F8A9062103 /* Pods-BitBeca-BitBecaUITests */,
 				37EDD5D7E5428EF2BCCC14494AEB59F0 /* Pods-BitBecaTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -304,14 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		341DCA968B40E002AF4D17D815CA49E2 /* Resources */ = {
+		97095CE933CC4759129FBCD27AAD8709 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3620229E5A0C0DEB0545297874E4B671 /* Resources */ = {
+		FE7F8E75C65103601ACD06F7FC2DC454 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +380,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CCA5E62D0BED5910D6A24865EB49FFBA /* Sources */ = {
+		0D70A7510A9D58933FE305D58F2B0FB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5AAB94FAA7E8FFB07EFE2D8D588FDD4 /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */,
+				C07761698A766BB58321FD7B7EBE325F /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CECC85C4446E54AA8C23CED774755648 /* Sources */ = {
+		616652B50E05BE7B9FD200D3F6825EAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53C4C7E0FAA049C771BA7C0F66E2AB8 /* Pods-BitBeca-dummy.m in Sources */,
+				1BE56347CAA432D8D3C25D7BA8A3D2E4 /* Pods-BitBeca-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,15 +407,64 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BE8AB6D440A95C2B200BD75A084426EB /* PBXTargetDependency */ = {
+		055578D4D445355871D96A12B7DC0EA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = E774E75123FCC5964BCA245DA1D35FF4 /* PBXContainerItemProxy */;
+		};
+		A3B49FCBAB9274718206B318D634F8D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-BitBeca";
 			target = EE8A2D97DE8FE54833753CF7A40E6453 /* Pods-BitBeca */;
-			targetProxy = 99687C032240E2247C0FAFD616AF15EB /* PBXContainerItemProxy */;
+			targetProxy = D783D5092073B142D247CAD4A7E69EF0 /* PBXContainerItemProxy */;
+		};
+		A485231C9BD986B15BA0C0643ED045E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 2E0D5B6550D2B368BB52464A9F1A8434 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		08A7028CD71A0CEA448CE56E660463DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C200ECAEF3374D02DA2B5CAD2BEC68A9 /* Pods-BitBeca.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1E762B013A390DAF99C33F86C8D59A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C02A583861624EE12650BBB11A36E065 /* Pods-BitBecaTests.debug.xcconfig */;
@@ -393,82 +501,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		48E76B428D23CC7BB83F798D54290B62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67EDD0846EAF2C2C25899FAA98410097 /* Pods-BitBeca.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		57287138A326DDE1DC1DF0B9DC85ADDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5C5AE9630E69B24F1C2B6A53C1876DA /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		71243899B61152433AAE34EE86456EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -636,9 +668,9 @@
 			};
 			name = Release;
 		};
-		C4329DC218DBB6669C9CFCDD88C64C6A /* Debug */ = {
+		92BA8F1FC96ABFF6A5DA525ACB8AE1BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C200ECAEF3374D02DA2B5CAD2BEC68A9 /* Pods-BitBeca.debug.xcconfig */;
+			baseConfigurationReference = 67EDD0846EAF2C2C25899FAA98410097 /* Pods-BitBeca.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -668,12 +700,84 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Release;
+		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6402B81C06D9307DC63FEB2C112F9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C5AE9630E69B24F1C2B6A53C1876DA /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
 			name = Debug;
 		};
-		EDF329602B8BD578A631AD38DF061DF5 /* Debug */ = {
+		F4CA80F67B188902CDACC0F40CFB1F55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C87DB92AA359EB35680998E087576D1D /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
 			buildSettings = {
@@ -722,11 +826,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A606AE2286CA16AEDC86AFF1190CA69 /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */ = {
+		07AC005DC7F9C8FB06942B188E33ED29 /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4329DC218DBB6669C9CFCDD88C64C6A /* Debug */,
-				48E76B428D23CC7BB83F798D54290B62 /* Release */,
+				F4CA80F67B188902CDACC0F40CFB1F55 /* Debug */,
+				C6402B81C06D9307DC63FEB2C112F9EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -740,11 +844,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D668E71B015FC463FD6F5E8CFA669335 /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */ = {
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDF329602B8BD578A631AD38DF061DF5 /* Debug */,
-				57287138A326DDE1DC1DF0B9DC85ADDE /* Release */,
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE111DE3F9CCD3765387F62D8F05A7A1 /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A7028CD71A0CEA448CE56E660463DD /* Debug */,
+				92BA8F1FC96ABFF6A5DA525ACB8AE1BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

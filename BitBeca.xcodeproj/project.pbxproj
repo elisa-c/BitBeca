@@ -165,7 +165,6 @@
 				D25D07CEBAC6C12B06D53BDA /* Pods-BitBecaTests.debug.xcconfig */,
 				4C77BCCA975F66972138AA44 /* Pods-BitBecaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +179,7 @@
 				1CC1E1202625DDFA00AB7714 /* Sources */,
 				1CC1E1212625DDFA00AB7714 /* Frameworks */,
 				1CC1E1222625DDFA00AB7714 /* Resources */,
+				1C4725862626099C00D114F2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -298,6 +298,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C4725862626099C00D114F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\n\nelse\n\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n\nfi\n";
+		};
 		71E86009EA9F926B55A1A1C0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
