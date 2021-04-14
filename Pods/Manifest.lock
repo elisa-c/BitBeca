@@ -1,16 +1,33 @@
 PODS:
+  - Commons (0.1.0)
+  - Details (0.1.0)
+  - Favorites (0.1.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
+  - Commons (from `../Commons`)
+  - Details (from `../Details`)
+  - Favorites (from `../Favorites`)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - SwiftLint
 
+EXTERNAL SOURCES:
+  Commons:
+    :path: "../Commons"
+  Details:
+    :path: "../Details"
+  Favorites:
+    :path: "../Favorites"
+
 SPEC CHECKSUMS:
+  Commons: 9f6140a50d54a56fe3a8302abcec976ebd5d47c9
+  Details: 4daa77bc92a81f7797ed7c26bab836fa9bf07a3b
+  Favorites: 630f3d2fedfafcbfac55114a2769613f26690895
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: bf3fc0d371d76b93e067039e6fc2ad533d893d05
+PODFILE CHECKSUM: 66256cae796bcef5ca709f82e6004d4ce54cc33b
 
 COCOAPODS: 1.10.1

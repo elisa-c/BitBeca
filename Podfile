@@ -4,7 +4,12 @@
 target 'BitBeca' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'SwiftLint'
+  
+  pod 'Commons', :path => '../Commons'
+  pod 'Details', :path => '../Details'
+  pod 'Favorites', :path => '../Favorites'
+
+  pod 'SwiftLint'
   # Pods for BitBeca
 
   target 'BitBecaTests' do
