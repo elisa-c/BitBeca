@@ -5,9 +5,9 @@ PODS:
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - Commons (from `../Commons`)
-  - Details (from `../Details`)
-  - Favorites (from `../Favorites`)
+  - Commons (from `https://github.com/elisa-c/Commons`)
+  - Details (from `https://github.com/elisa-c/Details`)
+  - Favorites (from `https://github.com/elisa-c/Favorites`)
   - SwiftLint
 
 SPEC REPOS:
@@ -16,11 +16,22 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Commons:
-    :path: "../Commons"
+    :git: https://github.com/elisa-c/Commons
   Details:
-    :path: "../Details"
+    :git: https://github.com/elisa-c/Details
   Favorites:
-    :path: "../Favorites"
+    :git: https://github.com/elisa-c/Favorites
+
+CHECKOUT OPTIONS:
+  Commons:
+    :commit: 1dbb065e0b3c091c438b8eef1751b2d2446a0798
+    :git: https://github.com/elisa-c/Commons
+  Details:
+    :commit: 0d58d161daa988ff5a71fecbd7eb4604b4db0f56
+    :git: https://github.com/elisa-c/Details
+  Favorites:
+    :commit: eaf5600e0bf91dab4a275689b30bfaa0ab9b0987
+    :git: https://github.com/elisa-c/Favorites
 
 SPEC CHECKSUMS:
   Commons: 9f6140a50d54a56fe3a8302abcec976ebd5d47c9
@@ -28,6 +39,6 @@ SPEC CHECKSUMS:
   Favorites: 630f3d2fedfafcbfac55114a2769613f26690895
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 66256cae796bcef5ca709f82e6004d4ce54cc33b
+PODFILE CHECKSUM: 864f3e59fdabbf8bfbf4a68102fc559ac10410e0
 
 COCOAPODS: 1.10.1

@@ -5,9 +5,9 @@ target 'BitBeca' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'Commons', :path => '../Commons'
-  pod 'Details', :path => '../Details'
-  pod 'Favorites', :path => '../Favorites'
+  pod 'Commons', :git => 'https://github.com/elisa-c/Commons'
+  pod 'Details', :git => 'https://github.com/elisa-c/Details'
+  pod 'Favorites', :git => 'https://github.com/elisa-c/Favorites'
 
   pod 'SwiftLint'
   # Pods for BitBeca
