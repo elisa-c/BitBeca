@@ -8,7 +8,6 @@
 import UIKit
 import Commons
 import Details
-import Favorites
 
 enum CoresBitBeca {
     case corAbacate

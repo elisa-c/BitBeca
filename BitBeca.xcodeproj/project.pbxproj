@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DCAD474E3AB69E0CE7D101 /* Pods_BitBeca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C24BA9BD9CB9E234C17A0B /* Pods_BitBeca.framework */; };
 		1CC1E1282625DDFA00AB7714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */; };
 		1CC1E12A2625DDFA00AB7714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */; };
 		1CC1E12C2625DDFA00AB7714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E12B2625DDFA00AB7714 /* ViewController.swift */; };
@@ -15,9 +16,8 @@
 		1CC1E1342625DDFD00AB7714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */; };
 		1CC1E13F2625DDFE00AB7714 /* BitBecaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E13E2625DDFE00AB7714 /* BitBecaTests.swift */; };
 		1CC1E14A2625DDFE00AB7714 /* BitBecaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */; };
-		3278915337CBA36FDFE1FDEB /* Pods_BitBecaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056AC2E06EF1F26A8E4F8ADC /* Pods_BitBecaTests.framework */; };
-		9318333D90DA609832847CA3 /* Pods_BitBeca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB38C8D8292B053AD4FDB6FC /* Pods_BitBeca.framework */; };
-		ADDE4D3790081D8988E7EF04 /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666A845C170359162BDF372A /* Pods_BitBeca_BitBecaUITests.framework */; };
+		664170BB9062AE602328FFF6 /* Pods_BitBecaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6830CE4B55C20922CD3DB5 /* Pods_BitBecaTests.framework */; };
+		910132BED6DE77EF39BD9558 /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E913A79AB31A3758B0C96E0 /* Pods_BitBeca_BitBecaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0315FBD0DDEC50AEBD015826 /* Pods-BitBecaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.release.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.release.xcconfig"; sourceTree = "<group>"; };
-		056AC2E06EF1F26A8E4F8ADC /* Pods_BitBecaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBecaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0657B02AA87D0272AC8F28FD /* Pods-BitBeca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.debug.xcconfig"; sourceTree = "<group>"; };
 		1CC1E1242625DDFA00AB7714 /* BitBeca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitBeca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,13 +53,14 @@
 		1CC1E1452625DDFE00AB7714 /* BitBecaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBecaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBecaUITests.swift; sourceTree = "<group>"; };
 		1CC1E14B2625DDFE00AB7714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3213C3094C74178856865E91 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		666A845C170359162BDF372A /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca_BitBecaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76F5BE4A8E4A524D31671FBD /* Pods-BitBeca-BitBecaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.release.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9B9589BE98C3359B4FEB3B38 /* Pods-BitBeca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.release.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.release.xcconfig"; sourceTree = "<group>"; };
-		B36B3797A48A39B92ABCE520 /* Pods-BitBeca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.debug.xcconfig"; sourceTree = "<group>"; };
-		C487C097044EA69E16DD7BFD /* Pods-BitBecaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.debug.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FB38C8D8292B053AD4FDB6FC /* Pods_BitBeca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24ED313D0DD48884207F323B /* Pods-BitBecaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.debug.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A1CFD0D9E73AF1EAA697F6C /* Pods-BitBecaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.release.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.release.xcconfig"; sourceTree = "<group>"; };
+		723D4E5CF3765079AF4E3C73 /* Pods-BitBeca-BitBecaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.release.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E913A79AB31A3758B0C96E0 /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca_BitBecaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6830CE4B55C20922CD3DB5 /* Pods_BitBecaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBecaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CDA0A65618607D4FD197D2 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F60AA3FD4005943945DD0053 /* Pods-BitBeca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.release.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.release.xcconfig"; sourceTree = "<group>"; };
+		F8C24BA9BD9CB9E234C17A0B /* Pods_BitBeca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9318333D90DA609832847CA3 /* Pods_BitBeca.framework in Frameworks */,
+				03DCAD474E3AB69E0CE7D101 /* Pods_BitBeca.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3278915337CBA36FDFE1FDEB /* Pods_BitBecaTests.framework in Frameworks */,
+				664170BB9062AE602328FFF6 /* Pods_BitBecaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADDE4D3790081D8988E7EF04 /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */,
+				910132BED6DE77EF39BD9558 /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 				1CC1E1482625DDFE00AB7714 /* BitBecaUITests */,
 				1CC1E1252625DDFA00AB7714 /* Products */,
 				B1457E20E11E7BC4423E67F3 /* Pods */,
-				D65AA117EA1483AB2F2ABFAF /* Frameworks */,
+				3D27147AAACCD43A60019321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +143,16 @@
 				1CC1E14B2625DDFE00AB7714 /* Info.plist */,
 			);
 			path = BitBecaUITests;
+			sourceTree = "<group>";
+		};
+		3D27147AAACCD43A60019321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8C24BA9BD9CB9E234C17A0B /* Pods_BitBeca.framework */,
+				8E913A79AB31A3758B0C96E0 /* Pods_BitBeca_BitBecaUITests.framework */,
+				CE6830CE4B55C20922CD3DB5 /* Pods_BitBecaTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6654EFB72626225300211E61 /* Model */ = {
@@ -196,24 +206,14 @@
 		B1457E20E11E7BC4423E67F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B36B3797A48A39B92ABCE520 /* Pods-BitBeca.debug.xcconfig */,
-				9B9589BE98C3359B4FEB3B38 /* Pods-BitBeca.release.xcconfig */,
-				3213C3094C74178856865E91 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */,
-				76F5BE4A8E4A524D31671FBD /* Pods-BitBeca-BitBecaUITests.release.xcconfig */,
-				C487C097044EA69E16DD7BFD /* Pods-BitBecaTests.debug.xcconfig */,
-				0315FBD0DDEC50AEBD015826 /* Pods-BitBecaTests.release.xcconfig */,
+				0657B02AA87D0272AC8F28FD /* Pods-BitBeca.debug.xcconfig */,
+				F60AA3FD4005943945DD0053 /* Pods-BitBeca.release.xcconfig */,
+				E1CDA0A65618607D4FD197D2 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */,
+				723D4E5CF3765079AF4E3C73 /* Pods-BitBeca-BitBecaUITests.release.xcconfig */,
+				24ED313D0DD48884207F323B /* Pods-BitBecaTests.debug.xcconfig */,
+				4A1CFD0D9E73AF1EAA697F6C /* Pods-BitBecaTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		D65AA117EA1483AB2F2ABFAF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FB38C8D8292B053AD4FDB6FC /* Pods_BitBeca.framework */,
-				666A845C170359162BDF372A /* Pods_BitBeca_BitBecaUITests.framework */,
-				056AC2E06EF1F26A8E4F8ADC /* Pods_BitBecaTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1E14E2625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBeca" */;
 			buildPhases = (
-				226223D193C41855017DDEFF /* [CP] Check Pods Manifest.lock */,
+				2AB946B3C2E9233A427A3A0A /* [CP] Check Pods Manifest.lock */,
 				1CC1E1202625DDFA00AB7714 /* Sources */,
 				1CC1E1212625DDFA00AB7714 /* Frameworks */,
 				1CC1E1222625DDFA00AB7714 /* Resources */,
 				1C4725862626099C00D114F2 /* ShellScript */,
-				2FBCD4F9FB278A2068910BDA /* [CP] Embed Pods Frameworks */,
+				3E7E89E4456900D9B7A2C3A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,7 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1E1512625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaTests" */;
 			buildPhases = (
-				4400C641F63CF2D6739B0E41 /* [CP] Check Pods Manifest.lock */,
+				35711DD89974577CE195EFD9 /* [CP] Check Pods Manifest.lock */,
 				1CC1E1362625DDFE00AB7714 /* Sources */,
 				1CC1E1372625DDFE00AB7714 /* Frameworks */,
 				1CC1E1382625DDFE00AB7714 /* Resources */,
@@ -262,11 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1E1542625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaUITests" */;
 			buildPhases = (
-				71816CD0A01F44788BC9F5BC /* [CP] Check Pods Manifest.lock */,
+				7BDD92C040356DA80FF3B344 /* [CP] Check Pods Manifest.lock */,
 				1CC1E1412625DDFE00AB7714 /* Sources */,
 				1CC1E1422625DDFE00AB7714 /* Frameworks */,
 				1CC1E1432625DDFE00AB7714 /* Resources */,
-				3681EA619F81AD9E1BC5D906 /* [CP] Embed Pods Frameworks */,
+				38CBD74F659957FE4DE2BEDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,7 +365,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\n\nelse\n\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n\nfi\n";
 		};
-		226223D193C41855017DDEFF /* [CP] Check Pods Manifest.lock */ = {
+		2AB946B3C2E9233A427A3A0A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,41 +387,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2FBCD4F9FB278A2068910BDA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3681EA619F81AD9E1BC5D906 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4400C641F63CF2D6739B0E41 /* [CP] Check Pods Manifest.lock */ = {
+		35711DD89974577CE195EFD9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,7 +409,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71816CD0A01F44788BC9F5BC /* [CP] Check Pods Manifest.lock */ = {
+		38CBD74F659957FE4DE2BEDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E7E89E4456900D9B7A2C3A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BDD92C040356DA80FF3B344 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -647,7 +647,7 @@
 		};
 		1CC1E14F2625DDFE00AB7714 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B36B3797A48A39B92ABCE520 /* Pods-BitBeca.debug.xcconfig */;
+			baseConfigurationReference = 0657B02AA87D0272AC8F28FD /* Pods-BitBeca.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -666,7 +666,7 @@
 		};
 		1CC1E1502625DDFE00AB7714 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B9589BE98C3359B4FEB3B38 /* Pods-BitBeca.release.xcconfig */;
+			baseConfigurationReference = F60AA3FD4005943945DD0053 /* Pods-BitBeca.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -685,7 +685,7 @@
 		};
 		1CC1E1522625DDFE00AB7714 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C487C097044EA69E16DD7BFD /* Pods-BitBecaTests.debug.xcconfig */;
+			baseConfigurationReference = 24ED313D0DD48884207F323B /* Pods-BitBecaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,7 +707,7 @@
 		};
 		1CC1E1532625DDFE00AB7714 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0315FBD0DDEC50AEBD015826 /* Pods-BitBecaTests.release.xcconfig */;
+			baseConfigurationReference = 4A1CFD0D9E73AF1EAA697F6C /* Pods-BitBecaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -729,7 +729,7 @@
 		};
 		1CC1E1552625DDFE00AB7714 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3213C3094C74178856865E91 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
+			baseConfigurationReference = E1CDA0A65618607D4FD197D2 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -749,7 +749,7 @@
 		};
 		1CC1E1562625DDFE00AB7714 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76F5BE4A8E4A524D31671FBD /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
+			baseConfigurationReference = 723D4E5CF3765079AF4E3C73 /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

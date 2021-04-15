@@ -5,10 +5,13 @@ target 'BitBeca' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'Commons', :git => 'https://github.com/elisa-c/Commons'
-  pod 'Details', :git => 'https://github.com/elisa-c/Details'
+  pod 'Reusable'
+  
+  pod 'Commons', :git => 'https://github.com/elisa-c/Commons.git'
+  pod 'Details', :git => 'https://github.com/elisa-c/Details.git'
 
   pod 'SwiftLint'
+
   # Pods for BitBeca
 
   target 'BitBecaTests' do
