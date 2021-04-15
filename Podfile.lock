@@ -1,13 +1,11 @@
 PODS:
   - Commons (0.1.0)
   - Details (0.1.0)
-  - Favorites (0.1.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
   - Commons (from `https://github.com/elisa-c/Commons`)
   - Details (from `https://github.com/elisa-c/Details`)
-  - Favorites (from `https://github.com/elisa-c/Favorites`)
   - SwiftLint
 
 SPEC REPOS:
@@ -19,8 +17,6 @@ EXTERNAL SOURCES:
     :git: https://github.com/elisa-c/Commons
   Details:
     :git: https://github.com/elisa-c/Details
-  Favorites:
-    :git: https://github.com/elisa-c/Favorites
 
 CHECKOUT OPTIONS:
   Commons:
@@ -29,16 +25,12 @@ CHECKOUT OPTIONS:
   Details:
     :commit: 0d58d161daa988ff5a71fecbd7eb4604b4db0f56
     :git: https://github.com/elisa-c/Details
-  Favorites:
-    :commit: eaf5600e0bf91dab4a275689b30bfaa0ab9b0987
-    :git: https://github.com/elisa-c/Favorites
 
 SPEC CHECKSUMS:
   Commons: 9f6140a50d54a56fe3a8302abcec976ebd5d47c9
   Details: 4daa77bc92a81f7797ed7c26bab836fa9bf07a3b
-  Favorites: 630f3d2fedfafcbfac55114a2769613f26690895
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 864f3e59fdabbf8bfbf4a68102fc559ac10410e0
+PODFILE CHECKSUM: 5c3b64cbba05677ae7992d2047ffef263edb68bd
 
 COCOAPODS: 1.10.1

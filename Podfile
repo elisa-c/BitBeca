@@ -7,7 +7,6 @@ target 'BitBeca' do
   
   pod 'Commons', :git => 'https://github.com/elisa-c/Commons'
   pod 'Details', :git => 'https://github.com/elisa-c/Details'
-  pod 'Favorites', :git => 'https://github.com/elisa-c/Favorites'
 
   pod 'SwiftLint'
   # Pods for BitBeca
