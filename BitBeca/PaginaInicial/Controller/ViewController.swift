@@ -8,7 +8,6 @@
 import UIKit
 import Commons
 import Details
-import Favorites
 
 enum CoresBitBeca {
     case corAbacate
@@ -20,15 +19,24 @@ enum CoresBitBeca {
         }
     }
 }
-
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    @IBOutlet weak var tableBitcoins: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
+        self.tableBitcoins.dataSource = self
+        self.tableBitcoins.backgroundColor = .black
     }
-
     // MARK: - Cores
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
+    }
+    // MARK: - TableView Tela Principal
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath)
+        return cell
     }
 }
