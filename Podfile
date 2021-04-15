@@ -6,10 +6,8 @@ target 'BitBeca' do
   use_frameworks!
   
   pod 'Reusable'
-  
   pod 'Commons', :git => 'https://github.com/elisa-c/Commons.git'
   pod 'Details', :git => 'https://github.com/elisa-c/Details.git'
-
   pod 'SwiftLint'
 
   # Pods for BitBeca
