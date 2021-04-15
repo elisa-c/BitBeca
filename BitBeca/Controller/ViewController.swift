@@ -21,9 +21,11 @@ enum CoresBitBeca {
 }
 
 class ViewController: UIViewController {
+    let myProvider = CriptomoedaProvider()
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
+        myProvider.getData()
     }
 
     // MARK: - Cores
