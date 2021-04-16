@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C7FC1F82629DF7200F51547 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FC1F52629DF7200F51547 /* FavoritesViewController.swift */; };
+		1C7FC1F92629DF7200F51547 /* ListaFavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FC1F72629DF7200F51547 /* ListaFavoritesCollectionViewCell.swift */; };
+		1C7FC2032629DFFA00F51547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FC2022629DFF900F51547 /* ViewController.swift */; };
+		1C8705E6262A040900F80220 /* BitcoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8705E5262A040900F80220 /* BitcoinsTableViewCell.swift */; };
+		1CC1E1282625DDFA00AB7714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */; };
+		1CC1E12A2625DDFA00AB7714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */; };
+		1CC1E12F2625DDFA00AB7714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1E12D2625DDFA00AB7714 /* Main.storyboard */; };
+		1CC1E1312625DDFD00AB7714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1E1302625DDFD00AB7714 /* Assets.xcassets */; };
+		1CC1E1342625DDFD00AB7714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */; };
+		1CC1E13F2625DDFE00AB7714 /* BitBecaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E13E2625DDFE00AB7714 /* BitBecaTests.swift */; };
+		1CC1E14A2625DDFE00AB7714 /* BitBecaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */; };
+		330C563BEDE7AC811D438F31 /* Pods_BitBecaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6187551BBB6C12CF49704C1 /* Pods_BitBecaTests.framework */; };
+		592297732628E26D000F136F /* CriptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297722628E26D000F136F /* CriptoViewModel.swift */; };
+		5922977D2628EAEC000F136F /* IconAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922977B2628EAEC000F136F /* IconAPI.swift */; };
+		5922977E2628EAEC000F136F /* CriptomoedaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */; };
+		592297882628EB4E000F136F /* IconProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297862628EB4E000F136F /* IconProvider.swift */; };
+		592297892628EB4E000F136F /* CriptomoedaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297872628EB4E000F136F /* CriptomoedaProvider.swift */; };
+		7F107A00C3FA6D9CE96D4707 /* Pods_BitBeca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86756B2995BF349EF4EB4C3 /* Pods_BitBeca.framework */; };
+		AEC9970DA9209958F20C977A /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2D8046B94C7A4FB643288F /* Pods_BitBeca_BitBecaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC1E13B2625DDFE00AB7714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC1E11C2625DDFA00AB7714 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC1E1232625DDFA00AB7714;
+			remoteInfo = BitBeca;
+		};
+		1CC1E1462625DDFE00AB7714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC1E11C2625DDFA00AB7714 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC1E1232625DDFA00AB7714;
+			remoteInfo = BitBeca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186902FE4F77D93A4E0C1E3E /* Pods-BitBeca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.release.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.release.xcconfig"; sourceTree = "<group>"; };
+		1C7FC1F52629DF7200F51547 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		1C7FC1F72629DF7200F51547 /* ListaFavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaFavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C7FC2022629DFF900F51547 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C8705E5262A040900F80220 /* BitcoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinsTableViewCell.swift; sourceTree = "<group>"; };
+		1CC1E1242625DDFA00AB7714 /* BitBeca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitBeca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1CC1E12E2625DDFA00AB7714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CC1E1302625DDFD00AB7714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CC1E1332625DDFD00AB7714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CC1E1352625DDFD00AB7714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC1E13A2625DDFE00AB7714 /* BitBecaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBecaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC1E13E2625DDFE00AB7714 /* BitBecaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBecaTests.swift; sourceTree = "<group>"; };
+		1CC1E1402625DDFE00AB7714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC1E1452625DDFE00AB7714 /* BitBecaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBecaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBecaUITests.swift; sourceTree = "<group>"; };
+		1CC1E14B2625DDFE00AB7714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39835E29639E7EC3401F5D27 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		499B922FFEAC319195D2F76D /* Pods-BitBeca-BitBecaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.release.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		592297722628E26D000F136F /* CriptoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptoViewModel.swift; sourceTree = "<group>"; };
+		5922977B2628EAEC000F136F /* IconAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconAPI.swift; sourceTree = "<group>"; };
+		5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptomoedaAPI.swift; sourceTree = "<group>"; };
+		592297862628EB4E000F136F /* IconProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconProvider.swift; sourceTree = "<group>"; };
+		592297872628EB4E000F136F /* CriptomoedaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptomoedaProvider.swift; sourceTree = "<group>"; };
+		8C2D8046B94C7A4FB643288F /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca_BitBecaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9098B73F6ABE409EE626F42B /* Pods-BitBecaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.debug.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6187551BBB6C12CF49704C1 /* Pods_BitBecaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBecaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86756B2995BF349EF4EB4C3 /* Pods_BitBeca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC54A2500BC19E7788910A87 /* Pods-BitBecaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.release.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECDEAA6C39EF61A592912FD5 /* Pods-BitBeca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC1E1212625DDFA00AB7714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F107A00C3FA6D9CE96D4707 /* Pods_BitBeca.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC1E1372625DDFE00AB7714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330C563BEDE7AC811D438F31 /* Pods_BitBecaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC1E1422625DDFE00AB7714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC9970DA9209958F20C977A /* Pods_BitBeca_BitBecaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C7FC1F32629DF7200F51547 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FC1F42629DF7200F51547 /* Controller */,
+				1C7FC1F62629DF7200F51547 /* View */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		1C7FC1F42629DF7200F51547 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FC1F52629DF7200F51547 /* FavoritesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C7FC1F62629DF7200F51547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FC1F72629DF7200F51547 /* ListaFavoritesCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C7FC2002629DFF900F51547 /* PaginaInicial */ = {
+			isa = PBXGroup;
+			children = (
+				1C8705E1262A03F000F80220 /* View */,
+				1C7FC2012629DFF900F51547 /* Controller */,
+			);
+			path = PaginaInicial;
+			sourceTree = "<group>";
+		};
+		1C7FC2012629DFF900F51547 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FC2022629DFF900F51547 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C8705E1262A03F000F80220 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C8705E5262A040900F80220 /* BitcoinsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CC1E11B2625DDFA00AB7714 = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1262625DDFA00AB7714 /* BitBeca */,
+				1CC1E13D2625DDFE00AB7714 /* BitBecaTests */,
+				1CC1E1482625DDFE00AB7714 /* BitBecaUITests */,
+				1CC1E1252625DDFA00AB7714 /* Products */,
+				B1457E20E11E7BC4423E67F3 /* Pods */,
+				B263F933A271000F34998AE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CC1E1252625DDFA00AB7714 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1242625DDFA00AB7714 /* BitBeca.app */,
+				1CC1E13A2625DDFE00AB7714 /* BitBecaTests.xctest */,
+				1CC1E1452625DDFE00AB7714 /* BitBecaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC1E1262625DDFA00AB7714 /* BitBeca */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FC1F32629DF7200F51547 /* Favorites */,
+				6654EFBC262622DC00211E61 /* Application */,
+				1C7FC2002629DFF900F51547 /* PaginaInicial */,
+				6654EFB72626225300211E61 /* Model */,
+				592297712628E26D000F136F /* ViewModel */,
+				6654EFB92626228100211E61 /* View */,
+				1CC1E1302625DDFD00AB7714 /* Assets.xcassets */,
+				1CC1E1352625DDFD00AB7714 /* Info.plist */,
+			);
+			path = BitBeca;
+			sourceTree = "<group>";
+		};
+		1CC1E13D2625DDFE00AB7714 /* BitBecaTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E13E2625DDFE00AB7714 /* BitBecaTests.swift */,
+				1CC1E1402625DDFE00AB7714 /* Info.plist */,
+			);
+			path = BitBecaTests;
+			sourceTree = "<group>";
+		};
+		1CC1E1482625DDFE00AB7714 /* BitBecaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1492625DDFE00AB7714 /* BitBecaUITests.swift */,
+				1CC1E14B2625DDFE00AB7714 /* Info.plist */,
+			);
+			path = BitBecaUITests;
+			sourceTree = "<group>";
+		};
+		592297712628E26D000F136F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				592297722628E26D000F136F /* CriptoViewModel.swift */,
+			);
+			name = ViewModel;
+			path = BitBeca/ViewModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		5922977A2628EAEC000F136F /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				5922977B2628EAEC000F136F /* IconAPI.swift */,
+				5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		592297852628EB4E000F136F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				592297862628EB4E000F136F /* IconProvider.swift */,
+				592297872628EB4E000F136F /* CriptomoedaProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		6654EFB72626225300211E61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				592297852628EB4E000F136F /* Provider */,
+				5922977A2628EAEC000F136F /* Codable */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6654EFB92626228100211E61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */,
+				1CC1E12D2625DDFA00AB7714 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6654EFBC262622DC00211E61 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1E1292625DDFA00AB7714 /* SceneDelegate.swift */,
+				1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B1457E20E11E7BC4423E67F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECDEAA6C39EF61A592912FD5 /* Pods-BitBeca.debug.xcconfig */,
+				186902FE4F77D93A4E0C1E3E /* Pods-BitBeca.release.xcconfig */,
+				39835E29639E7EC3401F5D27 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */,
+				499B922FFEAC319195D2F76D /* Pods-BitBeca-BitBecaUITests.release.xcconfig */,
+				9098B73F6ABE409EE626F42B /* Pods-BitBecaTests.debug.xcconfig */,
+				CC54A2500BC19E7788910A87 /* Pods-BitBecaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B263F933A271000F34998AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86756B2995BF349EF4EB4C3 /* Pods_BitBeca.framework */,
+				8C2D8046B94C7A4FB643288F /* Pods_BitBeca_BitBecaUITests.framework */,
+				C6187551BBB6C12CF49704C1 /* Pods_BitBecaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC1E1232625DDFA00AB7714 /* BitBeca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC1E14E2625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBeca" */;
+			buildPhases = (
+				4A63768C65C576327541437C /* [CP] Check Pods Manifest.lock */,
+				1CC1E1202625DDFA00AB7714 /* Sources */,
+				1CC1E1212625DDFA00AB7714 /* Frameworks */,
+				1CC1E1222625DDFA00AB7714 /* Resources */,
+				1C4725862626099C00D114F2 /* ShellScript */,
+				4C4708347928206966DB1B3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitBeca;
+			productName = BitBeca;
+			productReference = 1CC1E1242625DDFA00AB7714 /* BitBeca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC1E1392625DDFE00AB7714 /* BitBecaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC1E1512625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaTests" */;
+			buildPhases = (
+				AA6BC7167633A48006005E67 /* [CP] Check Pods Manifest.lock */,
+				1CC1E1362625DDFE00AB7714 /* Sources */,
+				1CC1E1372625DDFE00AB7714 /* Frameworks */,
+				1CC1E1382625DDFE00AB7714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC1E13C2625DDFE00AB7714 /* PBXTargetDependency */,
+			);
+			name = BitBecaTests;
+			productName = BitBecaTests;
+			productReference = 1CC1E13A2625DDFE00AB7714 /* BitBecaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CC1E1442625DDFE00AB7714 /* BitBecaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC1E1542625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaUITests" */;
+			buildPhases = (
+				C38A90D4A85F98D8D010F058 /* [CP] Check Pods Manifest.lock */,
+				1CC1E1412625DDFE00AB7714 /* Sources */,
+				1CC1E1422625DDFE00AB7714 /* Frameworks */,
+				1CC1E1432625DDFE00AB7714 /* Resources */,
+				B4BBB9C32533B3A054ACDF07 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC1E1472625DDFE00AB7714 /* PBXTargetDependency */,
+			);
+			name = BitBecaUITests;
+			productName = BitBecaUITests;
+			productReference = 1CC1E1452625DDFE00AB7714 /* BitBecaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CC1E11C2625DDFA00AB7714 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1CC1E1232625DDFA00AB7714 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1CC1E1392625DDFE00AB7714 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1CC1E1232625DDFA00AB7714;
+					};
+					1CC1E1442625DDFE00AB7714 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1CC1E1232625DDFA00AB7714;
+					};
+				};
+			};
+			buildConfigurationList = 1CC1E11F2625DDFA00AB7714 /* Build configuration list for PBXProject "BitBeca" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CC1E11B2625DDFA00AB7714;
+			productRefGroup = 1CC1E1252625DDFA00AB7714 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC1E1232625DDFA00AB7714 /* BitBeca */,
+				1CC1E1392625DDFE00AB7714 /* BitBecaTests */,
+				1CC1E1442625DDFE00AB7714 /* BitBecaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC1E1222625DDFA00AB7714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC1E1342625DDFD00AB7714 /* LaunchScreen.storyboard in Resources */,
+				1CC1E1312625DDFD00AB7714 /* Assets.xcassets in Resources */,
+				1CC1E12F2625DDFA00AB7714 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC1E1382625DDFE00AB7714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC1E1432625DDFE00AB7714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4725862626099C00D114F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n\nelse\n\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n\nfi\n";
+		};
+		4A63768C65C576327541437C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBeca-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4708347928206966DB1B3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBeca/Pods-BitBeca-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6BC7167633A48006005E67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBecaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4BBB9C32533B3A054ACDF07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38A90D4A85F98D8D010F058 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBeca-BitBecaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC1E1202625DDFA00AB7714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7FC2032629DFFA00F51547 /* ViewController.swift in Sources */,
+				1C7FC1F92629DF7200F51547 /* ListaFavoritesCollectionViewCell.swift in Sources */,
+				1C8705E6262A040900F80220 /* BitcoinsTableViewCell.swift in Sources */,
+				5922977E2628EAEC000F136F /* CriptomoedaAPI.swift in Sources */,
+				1C7FC1F82629DF7200F51547 /* FavoritesViewController.swift in Sources */,
+				592297882628EB4E000F136F /* IconProvider.swift in Sources */,
+				5922977D2628EAEC000F136F /* IconAPI.swift in Sources */,
+				1CC1E1282625DDFA00AB7714 /* AppDelegate.swift in Sources */,
+				592297732628E26D000F136F /* CriptoViewModel.swift in Sources */,
+				592297892628EB4E000F136F /* CriptomoedaProvider.swift in Sources */,
+				1CC1E12A2625DDFA00AB7714 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC1E1362625DDFE00AB7714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC1E13F2625DDFE00AB7714 /* BitBecaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC1E1412625DDFE00AB7714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC1E14A2625DDFE00AB7714 /* BitBecaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC1E13C2625DDFE00AB7714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC1E1232625DDFA00AB7714 /* BitBeca */;
+			targetProxy = 1CC1E13B2625DDFE00AB7714 /* PBXContainerItemProxy */;
+		};
+		1CC1E1472625DDFE00AB7714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC1E1232625DDFA00AB7714 /* BitBeca */;
+			targetProxy = 1CC1E1462625DDFE00AB7714 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CC1E12D2625DDFA00AB7714 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC1E12E2625DDFA00AB7714 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CC1E1322625DDFD00AB7714 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC1E1332625DDFD00AB7714 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CC1E14C2625DDFE00AB7714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CC1E14D2625DDFE00AB7714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC1E14F2625DDFE00AB7714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDEAA6C39EF61A592912FD5 /* Pods-BitBeca.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBeca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Squad1.BitBeca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1CC1E1502625DDFE00AB7714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186902FE4F77D93A4E0C1E3E /* Pods-BitBeca.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBeca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Squad1.BitBeca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1CC1E1522625DDFE00AB7714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9098B73F6ABE409EE626F42B /* Pods-BitBecaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBecaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Squad1.BitBecaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBeca.app/BitBeca";
+			};
+			name = Debug;
+		};
+		1CC1E1532625DDFE00AB7714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC54A2500BC19E7788910A87 /* Pods-BitBecaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBecaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Squad1.BitBecaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBeca.app/BitBeca";
+			};
+			name = Release;
+		};
+		1CC1E1552625DDFE00AB7714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39835E29639E7EC3401F5D27 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBecaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Squad1.BitBecaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitBeca;
+			};
+			name = Debug;
+		};
+		1CC1E1562625DDFE00AB7714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499B922FFEAC319195D2F76D /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBecaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Squad1.BitBecaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitBeca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC1E11F2625DDFA00AB7714 /* Build configuration list for PBXProject "BitBeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC1E14C2625DDFE00AB7714 /* Debug */,
+				1CC1E14D2625DDFE00AB7714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC1E14E2625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC1E14F2625DDFE00AB7714 /* Debug */,
+				1CC1E1502625DDFE00AB7714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC1E1512625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC1E1522625DDFE00AB7714 /* Debug */,
+				1CC1E1532625DDFE00AB7714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC1E1542625DDFE00AB7714 /* Build configuration list for PBXNativeTarget "BitBecaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC1E1552625DDFE00AB7714 /* Debug */,
+				1CC1E1562625DDFE00AB7714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CC1E11C2625DDFA00AB7714 /* Project object */;
+}

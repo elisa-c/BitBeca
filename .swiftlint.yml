@@ -1,0 +1,6 @@
+excluded: 
+- BitBeca/Application/AppDelegate.swift
+- BitBeca/Application/SceneDelegate.swift
+- BitBeca/Pods
+included:
+- BitBeca

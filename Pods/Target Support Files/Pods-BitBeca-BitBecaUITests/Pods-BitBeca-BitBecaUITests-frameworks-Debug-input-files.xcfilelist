@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
+${BUILT_PRODUCTS_DIR}/Commons/Commons.framework
+${BUILT_PRODUCTS_DIR}/Details/Details.framework
+${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework

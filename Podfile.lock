@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.4.1):
+    - Alamofire (~> 4.7)
+  - Commons (0.1.0)
+  - Details (0.1.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.4.0)
+  - Commons (from `https://github.com/elisa-c/Commons.git`)
+  - Details (from `https://github.com/elisa-c/Details.git`)
+  - Reusable
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Reusable
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  Commons:
+    :git: https://github.com/elisa-c/Commons.git
+  Details:
+    :git: https://github.com/elisa-c/Details.git
+
+CHECKOUT OPTIONS:
+  Commons:
+    :commit: 1dbb065e0b3c091c438b8eef1751b2d2446a0798
+    :git: https://github.com/elisa-c/Commons.git
+  Details:
+    :commit: 275e34dbcd7ff4109fc74ffe055c0af92ffe3164
+    :git: https://github.com/elisa-c/Details.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Commons: 9f6140a50d54a56fe3a8302abcec976ebd5d47c9
+  Details: 4daa77bc92a81f7797ed7c26bab836fa9bf07a3b
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 4fb5fcbd1c37d718e068f477472830873efca78d
+
+COCOAPODS: 1.10.1
