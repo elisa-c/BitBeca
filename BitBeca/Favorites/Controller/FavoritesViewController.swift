@@ -10,6 +10,7 @@
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     //viewDidLoad
+    //ViewDidLoad2
     override func viewDidLoad() {
         super.viewDidLoad()
 
