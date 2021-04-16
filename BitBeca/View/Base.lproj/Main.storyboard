@@ -120,7 +120,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="unM-cd-N6U"/>
                     <connections>
-                        <outlet property="tableBitcoins" destination="Rx1-io-irE" id="TyP-CF-rZg"/>
+                        <outlet property="tableBitcoins" destination="Rx1-io-irE" id="uTD-2g-3zt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
