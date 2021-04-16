@@ -21,9 +21,11 @@ enum CoresBitBeca {
 }
 class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableBitcoins: UITableView!
+    let myProvider = CriptomoedaProvider()
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
+        myProvider.getData()
         self.tableBitcoins.dataSource = self
         self.tableBitcoins.backgroundColor = .black
     }

@@ -1,36 +1,44 @@
 PODS:
   - Commons (0.1.0)
   - Details (0.1.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - Commons (from `https://github.com/elisa-c/Commons`)
-  - Details (from `https://github.com/elisa-c/Details`)
+  - Commons (from `https://github.com/elisa-c/Commons.git`)
+  - Details (from `https://github.com/elisa-c/Details.git`)
+  - Reusable
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - Reusable
     - SwiftLint
 
 EXTERNAL SOURCES:
   Commons:
-    :git: https://github.com/elisa-c/Commons
+    :git: https://github.com/elisa-c/Commons.git
   Details:
-    :git: https://github.com/elisa-c/Details
+    :git: https://github.com/elisa-c/Details.git
 
 CHECKOUT OPTIONS:
   Commons:
     :commit: 1dbb065e0b3c091c438b8eef1751b2d2446a0798
-    :git: https://github.com/elisa-c/Commons
+    :git: https://github.com/elisa-c/Commons.git
   Details:
-    :commit: 0d58d161daa988ff5a71fecbd7eb4604b4db0f56
-    :git: https://github.com/elisa-c/Details
+    :commit: 275e34dbcd7ff4109fc74ffe055c0af92ffe3164
+    :git: https://github.com/elisa-c/Details.git
 
 SPEC CHECKSUMS:
   Commons: 9f6140a50d54a56fe3a8302abcec976ebd5d47c9
   Details: 4daa77bc92a81f7797ed7c26bab836fa9bf07a3b
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: e721aadc323c8ce59d6501454fb070e2343f3c8d
+PODFILE CHECKSUM: 8999123ea6a561a9ac921fd541d89ca89ae3678b
 
 COCOAPODS: 1.10.1

@@ -1,2 +1,7 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Commons.framework
+<<<<<<< HEAD
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Details.framework
+=======
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Details.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28

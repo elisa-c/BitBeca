@@ -19,6 +19,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		0AD1572B423AB98D7A22FDAB47976B9E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C303A3974226243A42E7CA2BAF355C /* ReplaceMe.swift */; };
 		14AC9F5C1B91ED59EC4CA12419F53B43 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD046C955D1C0A8CBCC4123D00FF8E /* ReplaceMe.swift */; };
 		2C9A322A3D08F8C0440B38CCBA107AD1 /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C345965A514C116ECA8F19EB6F5884 /* Pods-BitBeca-BitBecaUITests-dummy.m */; };
@@ -27,8 +28,25 @@
 		61412B36CF2F64D76EBFD47ED56C5EAE /* Pods-BitBeca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD14EC8E988C6CCD5BFBCEEBF519B72 /* Pods-BitBeca-dummy.m */; };
 		65DE60CA59FDBF5CCC751F291FDF2A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		69D90EBB6446FC65B37C8562CA168F71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+=======
+		0D59D080978F86C7EBA728D2DC11B3A9 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0559C1AB8B1E146675A2BF36A97BF3 /* UITableView+Reusable.swift */; };
+		14AC9F5C1B91ED59EC4CA12419F53B43 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA124C01D403D5211AAB6ED5204EA72E /* ReplaceMe.swift */; };
+		1C2DB871B0B4BC27EE9220F40E3A51CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		2220BB7369ACCB812C7F44C2D0A83E44 /* Reusable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A385E5A45770DADCEE99D14A8DC61A5 /* Reusable-dummy.m */; };
+		26E1939124B6DB686E6EA9529D4CF9E2 /* Details-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2169660188E835574F970194F30FB2 /* Details-dummy.m */; };
+		2F50FF8160FA6745455D91398000B804 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		4401D8467CD095470B3D2B265AD68461 /* Commons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 613C7E9FCC32AA4A042B515D80F6DE21 /* Commons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45ED087737B0389E0A114182AE58EA90 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3AD98EEF12FE9AF78477E1500A14A /* UICollectionView+Reusable.swift */; };
+		51DF72EBDA2583D69CCA0954BF8A7D7B /* Reusable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B722B3F710948B6E81125BB4C44074 /* Reusable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555F09970F026CBB14DF7594802A1FA8 /* Pods-BitBeca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD14EC8E988C6CCD5BFBCEEBF519B72 /* Pods-BitBeca-dummy.m */; };
+		5BA4015288720642BC6E8ECF82355DC3 /* Commons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE485CACB26A4178864712B7B229306A /* Commons-dummy.m */; };
+		65DE60CA59FDBF5CCC751F291FDF2A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		6F94A9BECCFC97E0AA3C5DDDAD458993 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651B0A6A90A0F0583BA7CA9AA0DC845 /* NibOwnerLoadable.swift */; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		7D1A2C62706E9EC4D0120778E0093572 /* Pods-BitBecaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A244C37A71B49BDFD824A99F07B028 /* Pods-BitBecaTests-dummy.m */; };
+		9056E15DD4708EA29AD2DCEBDFBF3D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		950E453F83053358FE83DF3813A9C984 /* Pods-BitBecaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 893470C9B00D87F3B3827DCCE9AC6501 /* Pods-BitBecaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+<<<<<<< HEAD
 		BDFFE29444AD043BB7CC1F36E9AEF1B1 /* Details-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FC745D2443021DADE889C4E0710312 /* Details-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F6B608C5B4485C5A474135A3852497 /* Details-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A934A072184318295DB4701F18E186B /* Details-dummy.m */; };
 		D396B6ADD521FD4D6F76E03B1FCF7FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -40,12 +58,31 @@
 
 /* Begin PBXContainerItemProxy section */
 		1AECBB740FCCB874BA48FA6ECF829ECD /* PBXContainerItemProxy */ = {
+=======
+		96F6847DAF1379B72CCE418047BBA688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		9E2CA4DB9FD617A641733C5045BD32D8 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D72F269AFE495F1E0234CB0B88B2B0 /* StoryboardBased.swift */; };
+		A05E990E29A56F185CA17B436DE0C1F8 /* Pods-BitBeca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133B0A5136BC51B5E38BD35F757269ED /* Pods-BitBeca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB75298A1016565EAB18C81AA9EAF105 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF633F6BBEF7F8A331D57A0A733F963 /* StoryboardSceneBased.swift */; };
+		BDFFE29444AD043BB7CC1F36E9AEF1B1 /* Details-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C9B03925DEA7A09EB9A26221EB3DD9 /* Details-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B25C532FFBDC292B2C6AB7E8B50034 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95058F0942D654964F0995261C1709 /* Reusable.swift */; };
+		D40F9365B21C8C4BFF6EC63310D55E74 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4E4C606E6EBF0705023BB93BEF2CD /* Details.swift */; };
+		EC3795907F02F56B622573439541117F /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C345965A514C116ECA8F19EB6F5884 /* Pods-BitBeca-BitBecaUITests-dummy.m */; };
+		EC69EADC6CBA8C55185AD201273022F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		EE0865A620B9D3D36515646DF935F992 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1AC3A929143FF94A988878AAC9AD4 /* NibLoadable.swift */; };
+		F1E67F8E4EE9C86888F1A78E917B7776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F8A7D930D8C0A0981BED214465C7BFD7 /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598E693F092A706194A471268E3A122 /* Pods-BitBeca-BitBecaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29713092E86E2A9D434BB46C78AC97CE /* PBXContainerItemProxy */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 452515EFD98D6DC50CA481DAD2AB133F;
 			remoteInfo = Commons;
 		};
+<<<<<<< HEAD
 		30C3EC34AD74EBD1CE7A7043E0E2B559 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -54,43 +91,89 @@
 			remoteInfo = "Pods-BitBeca";
 		};
 		53541C96D6594F6D14A93E5E645EAA2E /* PBXContainerItemProxy */ = {
+=======
+		3C956D2D589A11228ECD67C3293F5E69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 53EA2D8AAAA389B3C9C01E9D1554FB6F;
 			remoteInfo = Details;
 		};
+		4B229D2FE06E2A0F5D45444D13FD17E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542460E7CDF2A9D5B2ECB5F8CE549E34;
+			remoteInfo = Reusable;
+		};
+		543AA0B1EE3864F10BBDF33F8F6155FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE8A2D97DE8FE54833753CF7A40E6453;
+			remoteInfo = "Pods-BitBeca";
+		};
+		5926654916391E2A253B35B75644EE74 /* PBXContainerItemProxy */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+<<<<<<< HEAD
 		68899D89CF2D817196ECD2519ABA392D /* PBXContainerItemProxy */ = {
+=======
+		642C62F64DF67CECDDA6B3406E890136 /* PBXContainerItemProxy */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
+<<<<<<< HEAD
 		F09CFC3E9A73FDDDDA1758ACF0F3A63B /* PBXContainerItemProxy */ = {
+=======
+		9902D9E729C16B888542BBF02E29B81A /* PBXContainerItemProxy */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53EA2D8AAAA389B3C9C01E9D1554FB6F;
-			remoteInfo = Details;
+			remoteGlobalIDString = 542460E7CDF2A9D5B2ECB5F8CE549E34;
+			remoteInfo = Reusable;
 		};
+<<<<<<< HEAD
 		F5FDA0928774A0C6BF318277BA5DD2C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
-		};
-		F6B634986E6813E81EDFCFDB1ACE4F01 /* PBXContainerItemProxy */ = {
+=======
+		D0F1C80BDDE2F938EFF83F98231A1B4F /* PBXContainerItemProxy */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 452515EFD98D6DC50CA481DAD2AB133F;
 			remoteInfo = Commons;
 		};
+<<<<<<< HEAD
+		F6B634986E6813E81EDFCFDB1ACE4F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 452515EFD98D6DC50CA481DAD2AB133F;
+			remoteInfo = Commons;
+=======
+		D357218BF14190C51FF8D01DA074789D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53EA2D8AAAA389B3C9C01E9D1554FB6F;
+			remoteInfo = Details;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		04BD3A28BBD44A31166C8990EDAAB210 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		133B0A5136BC51B5E38BD35F757269ED /* Pods-BitBeca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitBeca-umbrella.h"; sourceTree = "<group>"; };
 		137845E280250D3E885D69B88F18870D /* Commons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Commons.modulemap; sourceTree = "<group>"; };
@@ -110,42 +193,114 @@
 		66280918EC519726C47352D61F2CF2BF /* Pods-BitBeca-BitBecaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitBeca-BitBecaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6663F7CD0A23EB674D64FF3C585C943E /* Commons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commons.release.xcconfig; sourceTree = "<group>"; };
 		68358C633535B961C390A808CC5A22CB /* Commons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commons-prefix.pch"; sourceTree = "<group>"; };
+=======
+		02793E63E870A0FA68158C1AAB96661E /* Reusable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reusable.release.xcconfig; sourceTree = "<group>"; };
+		081D35B0D8EC00BE2292F5904770FDC7 /* Reusable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reusable-prefix.pch"; sourceTree = "<group>"; };
+		0B0559C1AB8B1E146675A2BF36A97BF3 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Reusable.swift"; path = "Sources/View/UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		133B0A5136BC51B5E38BD35F757269ED /* Pods-BitBeca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitBeca-umbrella.h"; sourceTree = "<group>"; };
+		1589FAB8CC8FA2C4422D1F8863D7D97F /* Details-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Details-Info.plist"; sourceTree = "<group>"; };
+		1F9EFF80965D232236072EC807B054B5 /* Pods-BitBeca.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitBeca.modulemap"; sourceTree = "<group>"; };
+		1FAEC8CB2406ACD5F836A11835FC5E29 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		20F900F8906359B00F9A4DE48A4A5802 /* Pods_BitBeca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitBeca.framework; path = "Pods-BitBeca.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2371C9BE62AB0EC87B61BF8B5F8826CF /* Commons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commons.debug.xcconfig; sourceTree = "<group>"; };
+		403A5A1663D2F5F3283D13D9B24C51E1 /* Details.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Details.release.xcconfig; sourceTree = "<group>"; };
+		41C9B03925DEA7A09EB9A26221EB3DD9 /* Details-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Details-umbrella.h"; sourceTree = "<group>"; };
+		45CA523BC9C8033E79D66F6BCAE3FDFA /* Pods_BitBecaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitBecaTests.framework; path = "Pods-BitBecaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5039E1E1F537CBD2A3A5D063E0FF4FB3 /* Pods-BitBecaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitBecaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		587A8ABE6FBFCF7BC5DE2A2DB157E362 /* Pods-BitBecaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBecaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D69748CA48ADBBCE5B86FD0EBEA4D2D /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitBeca_BitBecaUITests.framework; path = "Pods-BitBeca-BitBecaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613C7E9FCC32AA4A042B515D80F6DE21 /* Commons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commons-umbrella.h"; sourceTree = "<group>"; };
+		641F4B71E80CCDEC3F0C39C8AA26B0BF /* Pods-BitBecaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBecaTests-Info.plist"; sourceTree = "<group>"; };
+		6598E693F092A706194A471268E3A122 /* Pods-BitBeca-BitBecaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitBeca-BitBecaUITests-umbrella.h"; sourceTree = "<group>"; };
+		66280918EC519726C47352D61F2CF2BF /* Pods-BitBeca-BitBecaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitBeca-BitBecaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		68C1D11A41891E9FCC9D8B60E7F5B23E /* Pods-BitBeca-BitBecaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitBeca-BitBecaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		691D09E537B89A50FE278D4517EDCB74 /* Commons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commons.release.xcconfig; sourceTree = "<group>"; };
 		69B97BC834CF094DDC066725DFD3AE36 /* Pods-BitBeca-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitBeca-frameworks.sh"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		706D49BE988DD6632D4ACE6FC95E6EEF /* Commons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commons.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		733FCBADD9ABC3A3F252717B113A06B2 /* Commons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Commons-dummy.m"; sourceTree = "<group>"; };
 		78FC745D2443021DADE889C4E0710312 /* Details-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Details-umbrella.h"; sourceTree = "<group>"; };
+=======
+		6A385E5A45770DADCEE99D14A8DC61A5 /* Reusable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reusable-dummy.m"; sourceTree = "<group>"; };
+		7AA1AC3A929143FF94A988878AAC9AD4 /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = Sources/View/NibLoadable.swift; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		7AD83B0DADC3540721815D144A7EE745 /* Pods-BitBeca-BitBecaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitBeca-BitBecaUITests.modulemap"; sourceTree = "<group>"; };
+		7B0642FC284058A36BC5FA30338A409A /* Details.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Details.debug.xcconfig; sourceTree = "<group>"; };
 		7DD14EC8E988C6CCD5BFBCEEBF519B72 /* Pods-BitBeca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitBeca-dummy.m"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		7DF633F6BBEF7F8A331D57A0A733F963 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSceneBased.swift; path = Sources/Storyboard/StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		81B722B3F710948B6E81125BB4C44074 /* Reusable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reusable-umbrella.h"; sourceTree = "<group>"; };
+		82D72F269AFE495F1E0234CB0B88B2B0 /* StoryboardBased.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardBased.swift; path = Sources/Storyboard/StoryboardBased.swift; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		882E24BE58F69DADA3C997CCADE878A1 /* Pods-BitBeca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBeca.release.xcconfig"; sourceTree = "<group>"; };
 		88F5B6E2AF288DC7A9C9F411DBC6956E /* Details.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Details.debug.xcconfig; sourceTree = "<group>"; };
 		893470C9B00D87F3B3827DCCE9AC6501 /* Pods-BitBecaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitBecaTests-umbrella.h"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		99C303A3974226243A42E7CA2BAF355C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Details/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		99C345965A514C116ECA8F19EB6F5884 /* Pods-BitBeca-BitBecaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitBeca-BitBecaUITests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A888C5AEAC90250A015216DB08F07862 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+=======
+		95337303AD829B9BCE070DA6D981362B /* Commons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Commons.modulemap; sourceTree = "<group>"; };
+		9736CBA89D15B457A1058FF9C406E7E4 /* Details.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Details.modulemap; sourceTree = "<group>"; };
+		99C345965A514C116ECA8F19EB6F5884 /* Pods-BitBeca-BitBecaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitBeca-BitBecaUITests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC3D9978EFBF5116F15CB3B277220AC /* Commons-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Commons-Info.plist"; sourceTree = "<group>"; };
+		A0ABA07B4D48354ED3F51C2D6AF5426B /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reusable.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D431D1037DD722C30003D3686EA3A8 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		A651B0A6A90A0F0583BA7CA9AA0DC845 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibOwnerLoadable.swift; path = Sources/View/NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		AE485CACB26A4178864712B7B229306A /* Commons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Commons-dummy.m"; sourceTree = "<group>"; };
+		B0ABE3583EBCD500EABCB49100EDF15B /* Commons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commons-prefix.pch"; sourceTree = "<group>"; };
+		B5E20B13B8EC84D809903CDD3379AC10 /* Reusable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Reusable.modulemap; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		B7C9C7A5943506045B985CDD26E1C8FE /* Pods-BitBeca-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-acknowledgements.plist"; sourceTree = "<group>"; };
 		B9B6878E5B39B584F925789D1A887613 /* Details.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Details.framework; path = Details.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA124C01D403D5211AAB6ED5204EA72E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Commons/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		C1D3D54A71D6A237A6897FD49D27D3AD /* Pods-BitBecaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBecaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		C3E3AD98EEF12FE9AF78477E1500A14A /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Reusable.swift"; path = "Sources/View/UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		C5A82ED2CB694205801D27C51B7BE185 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBeca-BitBecaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA7ECD4549D5D6127510D521747EB3C3 /* Pods-BitBeca-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitBeca-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB2169660188E835574F970194F30FB2 /* Details-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Details-dummy.m"; sourceTree = "<group>"; };
 		CB920757B5475AD53AE08995999264D3 /* Pods-BitBecaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitBecaTests.modulemap"; sourceTree = "<group>"; };
 		CBBD73D71D501A044B1F2C6084071AB6 /* Pods-BitBeca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBeca.debug.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		D0A4241F5965EFF09B58ED1A30E51B0D /* Details.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Details.release.xcconfig; sourceTree = "<group>"; };
+=======
+		CC95058F0942D654964F0995261C1709 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Sources/View/Reusable.swift; sourceTree = "<group>"; };
+		CFB71D2D41EC490330F9B1D62947C5C4 /* Reusable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reusable.debug.xcconfig; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		D104149BD9D3107DDC090F646A973374 /* Pods-BitBeca-BitBecaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-BitBecaUITests-Info.plist"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D7A244C37A71B49BDFD824A99F07B028 /* Pods-BitBecaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitBecaTests-dummy.m"; sourceTree = "<group>"; };
 		DAD58A8768A3E1528FA3E819947737D9 /* Pods-BitBecaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBecaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E31B5CCDDF2349591C310E0904CB8771 /* Pods-BitBeca-BitBecaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-BitBecaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E4DD046C955D1C0A8CBCC4123D00FF8E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Commons/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E7FEC60AC5F30530F8B77FE30600893F /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Commons.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+<<<<<<< HEAD
 		E9370A6E02B33D259191883F55509309 /* Commons-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Commons-Info.plist"; sourceTree = "<group>"; };
+=======
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		ECB4755C8F48B39F2A3438D2218FBF1E /* Pods-BitBeca-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitBeca-Info.plist"; sourceTree = "<group>"; };
+		ECF4E4C606E6EBF0705023BB93BEF2CD /* Details.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Details.swift; path = Details/Classes/View/Details.swift; sourceTree = "<group>"; };
 		F56C98BD80C5FED7E4F593140E90E121 /* Pods-BitBeca-BitBecaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitBeca-BitBecaUITests.release.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		FBC6E9B2DFCF3FF03A089A2CF147084D /* Details-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Details-prefix.pch"; sourceTree = "<group>"; };
+		FC45ED82BB0CAC942B6246CB7B3F0441 /* Reusable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Reusable-Info.plist"; sourceTree = "<group>"; };
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		25E750FC074F168B964A825E12FEF268 /* Frameworks */ = {
+<<<<<<< HEAD
+=======
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -154,18 +309,11 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7BB860350381F33770CC2550D303AF65 /* Frameworks */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				65DE60CA59FDBF5CCC751F291FDF2A23 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B32EF0DFF79BB3FC76EB367E5CF72C03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69D90EBB6446FC65B37C8562CA168F71 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,17 +325,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
+		B32EF0DFF79BB3FC76EB367E5CF72C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D90EBB6446FC65B37C8562CA168F71 /* Foundation.framework in Frameworks */,
+=======
+		C32FC250D338BCA5427EA45702D30866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F6847DAF1379B72CCE418047BBA688 /* Foundation.framework in Frameworks */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD96ED3C0D400EDDB35539D75BDD9BAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2DB871B0B4BC27EE9220F40E3A51CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+<<<<<<< HEAD
 		D158F40E3D821AB95E48F6E437078D16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D396B6ADD521FD4D6F76E03B1FCF7FA2 /* Foundation.framework in Frameworks */,
+=======
+		DDE6DD853DA6F2B83A6CBD90D388D229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9056E15DD4708EA29AD2DCEBDFBF3D68 /* Foundation.framework in Frameworks */,
+				2F50FF8160FA6745455D91398000B804 /* UIKit.framework in Frameworks */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		31CAA533ADF8F42C920B65FD441896DA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,19 +384,98 @@
 			isa = PBXGroup;
 			children = (
 				31CAA533ADF8F42C920B65FD441896DA /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+=======
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EE38DDF6F70E420E4558722D79430F1 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				3F13A656BA5E74F7AD0545ABAC1B0ABE /* Storyboard */,
+				36CAC35F5A19DEB25B83803B1A6A890F /* Support Files */,
+				F30C3845F68E2B67284EEC2E6F8F0A2B /* View */,
+			);
+			name = Reusable;
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		2B03A9FFB71C9B6F127C13A5ECF4BC35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FAEC8CB2406ACD5F836A11835FC5E29 /* SwiftLint.debug.xcconfig */,
+				A4D431D1037DD722C30003D3686EA3A8 /* SwiftLint.release.xcconfig */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+<<<<<<< HEAD
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+=======
+		36CAC35F5A19DEB25B83803B1A6A890F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5E20B13B8EC84D809903CDD3379AC10 /* Reusable.modulemap */,
+				6A385E5A45770DADCEE99D14A8DC61A5 /* Reusable-dummy.m */,
+				FC45ED82BB0CAC942B6246CB7B3F0441 /* Reusable-Info.plist */,
+				081D35B0D8EC00BE2292F5904770FDC7 /* Reusable-prefix.pch */,
+				81B722B3F710948B6E81125BB4C44074 /* Reusable-umbrella.h */,
+				CFB71D2D41EC490330F9B1D62947C5C4 /* Reusable.debug.xcconfig */,
+				02793E63E870A0FA68158C1AAB96661E /* Reusable.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reusable";
+			sourceTree = "<group>";
+		};
+		3F13A656BA5E74F7AD0545ABAC1B0ABE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				82D72F269AFE495F1E0234CB0B88B2B0 /* StoryboardBased.swift */,
+				7DF633F6BBEF7F8A331D57A0A733F963 /* StoryboardSceneBased.swift */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		481F39CFAD709A214ADCBDA23E471603 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				ECF4E4C606E6EBF0705023BB93BEF2CD /* Details.swift */,
+				E0E00DB5F838621EDE4CA7E40B3C21D2 /* Support Files */,
+			);
+			name = Details;
+			path = Details;
+			sourceTree = "<group>";
+		};
+		4AFE959551D4616C7AD04CC24014F91F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7FEC60AC5F30530F8B77FE30600893F /* Commons.framework */,
+				B9B6878E5B39B584F925789D1A887613 /* Details.framework */,
+				20F900F8906359B00F9A4DE48A4A5802 /* Pods_BitBeca.framework */,
+				5D69748CA48ADBBCE5B86FD0EBEA4D2D /* Pods_BitBeca_BitBecaUITests.framework */,
+				45CA523BC9C8033E79D66F6BCAE3FDFA /* Pods_BitBecaTests.framework */,
+				A0ABA07B4D48354ED3F51C2D6AF5426B /* Reusable.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		583A737A9BBDFCA8B659C7FBAE1F15AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +494,31 @@
 			);
 			name = Details;
 			path = Details;
+=======
+		7B86A43EFF40F1988BCA182D42AF802D /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BA124C01D403D5211AAB6ED5204EA72E /* ReplaceMe.swift */,
+				8A09E21721ED89314EE1726E22994FBA /* Support Files */,
+			);
+			name = Commons;
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		8A09E21721ED89314EE1726E22994FBA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95337303AD829B9BCE070DA6D981362B /* Commons.modulemap */,
+				AE485CACB26A4178864712B7B229306A /* Commons-dummy.m */,
+				9EC3D9978EFBF5116F15CB3B277220AC /* Commons-Info.plist */,
+				B0ABE3583EBCD500EABCB49100EDF15B /* Commons-prefix.pch */,
+				613C7E9FCC32AA4A042B515D80F6DE21 /* Commons-umbrella.h */,
+				2371C9BE62AB0EC87B61BF8B5F8826CF /* Commons.debug.xcconfig */,
+				691D09E537B89A50FE278D4517EDCB74 /* Commons.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Commons";
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			sourceTree = "<group>";
 		};
 		8E189C75AF9BDD0DFD8375B85822A851 /* Targets Support Files */ = {
@@ -245,6 +531,7 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		B14A79B3485D902AC7D610C11A4ED075 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,9 +550,18 @@
 				583A737A9BBDFCA8B659C7FBAE1F15AE /* Pods */,
 				EAECD8B0901B7D8FDCD3EB8284E6D703 /* Products */,
 				8E189C75AF9BDD0DFD8375B85822A851 /* Targets Support Files */,
+=======
+		A5F3BB25921CE6EBB4350FA53B892246 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				2B03A9FFB71C9B6F127C13A5ECF4BC35 /* Support Files */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +598,28 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Details";
+=======
+		B1E583DD4CA2432723AE843E03DA7D82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B86A43EFF40F1988BCA182D42AF802D /* Commons */,
+				481F39CFAD709A214ADCBDA23E471603 /* Details */,
+				1EE38DDF6F70E420E4558722D79430F1 /* Reusable */,
+				A5F3BB25921CE6EBB4350FA53B892246 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B1E583DD4CA2432723AE843E03DA7D82 /* Pods */,
+				4AFE959551D4616C7AD04CC24014F91F /* Products */,
+				8E189C75AF9BDD0DFD8375B85822A851 /* Targets Support Files */,
+			);
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			sourceTree = "<group>";
 		};
 		DFEAFB551A2FEF69C1A677759006C7D6 /* Pods-BitBeca-BitBecaUITests */ = {
@@ -321,6 +639,7 @@
 			path = "Target Support Files/Pods-BitBeca-BitBecaUITests";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		EAECD8B0901B7D8FDCD3EB8284E6D703 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +650,33 @@
 				45CA523BC9C8033E79D66F6BCAE3FDFA /* Pods_BitBecaTests.framework */,
 			);
 			name = Products;
+=======
+		E0E00DB5F838621EDE4CA7E40B3C21D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9736CBA89D15B457A1058FF9C406E7E4 /* Details.modulemap */,
+				CB2169660188E835574F970194F30FB2 /* Details-dummy.m */,
+				1589FAB8CC8FA2C4422D1F8863D7D97F /* Details-Info.plist */,
+				FBC6E9B2DFCF3FF03A089A2CF147084D /* Details-prefix.pch */,
+				41C9B03925DEA7A09EB9A26221EB3DD9 /* Details-umbrella.h */,
+				7B0642FC284058A36BC5FA30338A409A /* Details.debug.xcconfig */,
+				403A5A1663D2F5F3283D13D9B24C51E1 /* Details.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Details";
+			sourceTree = "<group>";
+		};
+		F30C3845F68E2B67284EEC2E6F8F0A2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AA1AC3A929143FF94A988878AAC9AD4 /* NibLoadable.swift */,
+				A651B0A6A90A0F0583BA7CA9AA0DC845 /* NibOwnerLoadable.swift */,
+				CC95058F0942D654964F0995261C1709 /* Reusable.swift */,
+				C3E3AD98EEF12FE9AF78477E1500A14A /* UICollectionView+Reusable.swift */,
+				0B0559C1AB8B1E146675A2BF36A97BF3 /* UITableView+Reusable.swift */,
+			);
+			name = View;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			sourceTree = "<group>";
 		};
 		F3EC50164E5CC663EB59D85EB0330560 /* Pods-BitBeca */ = {
@@ -377,14 +723,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		305F3690FF2CC1D035A6FF3AF2D32EE9 /* Headers */ = {
+		2A993FED3E08D163E297EA687C4BAA53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4401D8467CD095470B3D2B265AD68461 /* Commons-umbrella.h in Headers */,
+				F8A7D930D8C0A0981BED214465C7BFD7 /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		73C941BDB9A09E00B8DA117CD3F87F66 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,9 +745,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96992F301DB3C0432685D3C1AD9F2AD /* Pods-BitBeca-BitBecaUITests-umbrella.h in Headers */,
+=======
+		305F3690FF2CC1D035A6FF3AF2D32EE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4401D8467CD095470B3D2B265AD68461 /* Commons-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5059B85C05A145EDCA5AB596E9EFFFAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51DF72EBDA2583D69CCA0954BF8A7D7B /* Reusable-umbrella.h in Headers */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B58C222EE0737B88BD491DEF3AC4156F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05E990E29A56F185CA17B436DE0C1F8 /* Pods-BitBeca-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+<<<<<<< HEAD
+=======
 		ED57D92055D416DDD90064B31C249C89 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,24 +781,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		09A94BDCCC758D2ADBEAB9F8A9062103 /* Pods-BitBeca-BitBecaUITests */ = {
 			isa = PBXNativeTarget;
+<<<<<<< HEAD
 			buildConfigurationList = 030451DD44B0C9857BB6698FB2B397AD /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */;
 			buildPhases = (
 				C273FD288AF75A2FA14E54DB716DF08B /* Headers */,
 				B63F3BA1DB9E8C73DBA5EA69815DC01D /* Sources */,
 				D158F40E3D821AB95E48F6E437078D16 /* Frameworks */,
 				4A992DE95FB6DCE266453736DA365760 /* Resources */,
+=======
+			buildConfigurationList = 41C8C477095A12E6005DBF351F2FC430 /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */;
+			buildPhases = (
+				2A993FED3E08D163E297EA687C4BAA53 /* Headers */,
+				966D5F2E8B52B9CFF134365617B0C26F /* Sources */,
+				DD96ED3C0D400EDDB35539D75BDD9BAB /* Frameworks */,
+				2AD21ED8C3D4E87A1D16BBD007265DC8 /* Resources */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				52E933EE078EAD80143A6E2F923D7DFD /* PBXTargetDependency */,
 				805DDA466D5276C450558927A3849162 /* PBXTargetDependency */,
 				B3CD586E9BA4E65A89EDBE21922D8ED9 /* PBXTargetDependency */,
+=======
+				D71827AD93919AB95391AE8708D75C9C /* PBXTargetDependency */,
+				7714FCB8983233C108D8032876C952C9 /* PBXTargetDependency */,
+				6D10ADCB6F97A64DF5474B44A1D09253 /* PBXTargetDependency */,
+				3561EF0806C1F3787661345A97CE14DA /* PBXTargetDependency */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			name = "Pods-BitBeca-BitBecaUITests";
 			productName = "Pods-BitBeca-BitBecaUITests";
@@ -445,7 +834,11 @@
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				E5A6C875FCBD57660354394C58CC426B /* PBXTargetDependency */,
+=======
+				E1FA16AE56A319C655F658D3227A9925 /* PBXTargetDependency */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			name = "Pods-BitBecaTests";
 			productName = "Pods-BitBecaTests";
@@ -475,7 +868,7 @@
 			buildConfigurationList = 213707D87720D37ABB1B61F80571AC12 /* Build configuration list for PBXNativeTarget "Details" */;
 			buildPhases = (
 				1E1CCF8EC5FC1D82C4AAC2CDCE1CC756 /* Headers */,
-				5A239B6317DB483F32C1C9AAC63C2F79 /* Sources */,
+				98281710BB716F72D1E66DD90943F217 /* Sources */,
 				25E750FC074F168B964A825E12FEF268 /* Frameworks */,
 				F0614FCF64DF277EE18C37305B8BB69B /* Resources */,
 			);
@@ -488,21 +881,55 @@
 			productReference = B9B6878E5B39B584F925789D1A887613 /* Details.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		542460E7CDF2A9D5B2ECB5F8CE549E34 /* Reusable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B6D84601F69DC7CE866EBFC991FB84 /* Build configuration list for PBXNativeTarget "Reusable" */;
+			buildPhases = (
+				5059B85C05A145EDCA5AB596E9EFFFAD /* Headers */,
+				CC543DAFC4864BFB541A1D715EB50238 /* Sources */,
+				DDE6DD853DA6F2B83A6CBD90D388D229 /* Frameworks */,
+				15EDE8EDF958905973A33DEFE925091C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reusable;
+			productName = Reusable;
+			productReference = A0ABA07B4D48354ED3F51C2D6AF5426B /* Reusable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EE8A2D97DE8FE54833753CF7A40E6453 /* Pods-BitBeca */ = {
 			isa = PBXNativeTarget;
+<<<<<<< HEAD
 			buildConfigurationList = 6D6F753F905E279A47B201B4F05DDB12 /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */;
 			buildPhases = (
 				73C941BDB9A09E00B8DA117CD3F87F66 /* Headers */,
 				91299764F76DB9332997A28D4FA73B6D /* Sources */,
 				B32EF0DFF79BB3FC76EB367E5CF72C03 /* Frameworks */,
 				A6D90716432E4197C3CE91D88CF68614 /* Resources */,
+=======
+			buildConfigurationList = DC0BA88CD2534B490270B7B215A0804C /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */;
+			buildPhases = (
+				B58C222EE0737B88BD491DEF3AC4156F /* Headers */,
+				7F6142B45A3FA311367C1DBFCC578278 /* Sources */,
+				C32FC250D338BCA5427EA45702D30866 /* Frameworks */,
+				ECB02BFFADF10E3E722E79434A9C53A0 /* Resources */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				509F729693A90B152F81BDECECCE4EF0 /* PBXTargetDependency */,
 				EA61E65ACC3F02D67E27EC9A5C3C7652 /* PBXTargetDependency */,
 				6CB5E9DF6D4E6E39B51130FD6B181901 /* PBXTargetDependency */,
+=======
+				69A84FFC2A826FCA2F0C5E4FB5873E83 /* PBXTargetDependency */,
+				FD21E825A48E7F8A62680666BECEE430 /* PBXTargetDependency */,
+				68FDE32C825DD2C99DD125CCCFFB8871 /* PBXTargetDependency */,
+				228F121529BDAD2A6A4F873953192AC7 /* PBXTargetDependency */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			name = "Pods-BitBeca";
 			productName = "Pods-BitBeca";
@@ -527,7 +954,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+<<<<<<< HEAD
 			productRefGroup = EAECD8B0901B7D8FDCD3EB8284E6D703 /* Products */;
+=======
+			productRefGroup = 4AFE959551D4616C7AD04CC24014F91F /* Products */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -536,6 +967,7 @@
 				EE8A2D97DE8FE54833753CF7A40E6453 /* Pods-BitBeca */,
 				09A94BDCCC758D2ADBEAB9F8A9062103 /* Pods-BitBeca-BitBecaUITests */,
 				37EDD5D7E5428EF2BCCC14494AEB59F0 /* Pods-BitBecaTests */,
+				542460E7CDF2A9D5B2ECB5F8CE549E34 /* Reusable */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
@@ -549,6 +981,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
+=======
+		15EDE8EDF958905973A33DEFE925091C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		1E928D8E37B2A0EF64367970459E348E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,14 +998,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		4A992DE95FB6DCE266453736DA365760 /* Resources */ = {
+=======
+		2AD21ED8C3D4E87A1D16BBD007265DC8 /* Resources */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		A6D90716432E4197C3CE91D88CF68614 /* Resources */ = {
+=======
+		ECB02BFFADF10E3E722E79434A9C53A0 /* Resources */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,6 +1031,8 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		21759BDADD452FD9DDD052D869E6FF01 /* Sources */ = {
+<<<<<<< HEAD
+=======
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -589,15 +1041,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A239B6317DB483F32C1C9AAC63C2F79 /* Sources */ = {
+		7F6142B45A3FA311367C1DBFCC578278 /* Sources */ = {
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F6B608C5B4485C5A474135A3852497 /* Details-dummy.m in Sources */,
-				0AD1572B423AB98D7A22FDAB47976B9E /* ReplaceMe.swift in Sources */,
+				555F09970F026CBB14DF7594802A1FA8 /* Pods-BitBeca-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		966D5F2E8B52B9CFF134365617B0C26F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3795907F02F56B622573439541117F /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+<<<<<<< HEAD
 		91299764F76DB9332997A28D4FA73B6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +1072,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9A322A3D08F8C0440B38CCBA107AD1 /* Pods-BitBeca-BitBecaUITests-dummy.m in Sources */,
+=======
+		98281710BB716F72D1E66DD90943F217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E1939124B6DB686E6EA9529D4CF9E2 /* Details-dummy.m in Sources */,
+				D40F9365B21C8C4BFF6EC63310D55E74 /* Details.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC543DAFC4864BFB541A1D715EB50238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0865A620B9D3D36515646DF935F992 /* NibLoadable.swift in Sources */,
+				6F94A9BECCFC97E0AA3C5DDDAD458993 /* NibOwnerLoadable.swift in Sources */,
+				2220BB7369ACCB812C7F44C2D0A83E44 /* Reusable-dummy.m in Sources */,
+				C4B25C532FFBDC292B2C6AB7E8B50034 /* Reusable.swift in Sources */,
+				9E2CA4DB9FD617A641733C5045BD32D8 /* StoryboardBased.swift in Sources */,
+				AB75298A1016565EAB18C81AA9EAF105 /* StoryboardSceneBased.swift in Sources */,
+				45ED087737B0389E0A114182AE58EA90 /* UICollectionView+Reusable.swift in Sources */,
+				0D59D080978F86C7EBA728D2DC11B3A9 /* UITableView+Reusable.swift in Sources */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +1109,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
 		509F729693A90B152F81BDECECCE4EF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Commons;
@@ -666,11 +1151,219 @@
 			name = Details;
 			target = 53EA2D8AAAA389B3C9C01E9D1554FB6F /* Details */;
 			targetProxy = F09CFC3E9A73FDDDDA1758ACF0F3A63B /* PBXContainerItemProxy */;
+=======
+		228F121529BDAD2A6A4F873953192AC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 642C62F64DF67CECDDA6B3406E890136 /* PBXContainerItemProxy */;
+		};
+		3561EF0806C1F3787661345A97CE14DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 5926654916391E2A253B35B75644EE74 /* PBXContainerItemProxy */;
+		};
+		68FDE32C825DD2C99DD125CCCFFB8871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reusable;
+			target = 542460E7CDF2A9D5B2ECB5F8CE549E34 /* Reusable */;
+			targetProxy = 9902D9E729C16B888542BBF02E29B81A /* PBXContainerItemProxy */;
+		};
+		69A84FFC2A826FCA2F0C5E4FB5873E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Commons;
+			target = 452515EFD98D6DC50CA481DAD2AB133F /* Commons */;
+			targetProxy = 29713092E86E2A9D434BB46C78AC97CE /* PBXContainerItemProxy */;
+		};
+		6D10ADCB6F97A64DF5474B44A1D09253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reusable;
+			target = 542460E7CDF2A9D5B2ECB5F8CE549E34 /* Reusable */;
+			targetProxy = 4B229D2FE06E2A0F5D45444D13FD17E9 /* PBXContainerItemProxy */;
+		};
+		7714FCB8983233C108D8032876C952C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Details;
+			target = 53EA2D8AAAA389B3C9C01E9D1554FB6F /* Details */;
+			targetProxy = D357218BF14190C51FF8D01DA074789D /* PBXContainerItemProxy */;
+		};
+		D71827AD93919AB95391AE8708D75C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Commons;
+			target = 452515EFD98D6DC50CA481DAD2AB133F /* Commons */;
+			targetProxy = D0F1C80BDDE2F938EFF83F98231A1B4F /* PBXContainerItemProxy */;
+		};
+		E1FA16AE56A319C655F658D3227A9925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BitBeca";
+			target = EE8A2D97DE8FE54833753CF7A40E6453 /* Pods-BitBeca */;
+			targetProxy = 543AA0B1EE3864F10BBDF33F8F6155FD /* PBXContainerItemProxy */;
+		};
+		FD21E825A48E7F8A62680666BECEE430 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Details;
+			target = 53EA2D8AAAA389B3C9C01E9D1554FB6F /* Details */;
+			targetProxy = 3C956D2D589A11228ECD67C3293F5E69 /* PBXContainerItemProxy */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		2DA7C3A6684D642FB0BA2C560417998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882E24BE58F69DADA3C997CCADE878A1 /* Pods-BitBeca.release.xcconfig */;
+=======
+		12B0BD943091B9DF11BC41C87BAF3168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB71D2D41EC490330F9B1D62947C5C4 /* Reusable.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Reusable/Reusable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reusable/Reusable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Reusable/Reusable.modulemap";
+				PRODUCT_MODULE_NAME = Reusable;
+				PRODUCT_NAME = Reusable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CD6719EFC0D01099AA431FD633D1CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBD73D71D501A044B1F2C6084071AB6 /* Pods-BitBeca.debug.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23B2F5F46C376259552CDBD91CA922A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+<<<<<<< HEAD
+			baseConfigurationReference = 706D49BE988DD6632D4ACE6FC95E6EEF /* Commons.debug.xcconfig */;
+=======
+			baseConfigurationReference = 02793E63E870A0FA68158C1AAB96661E /* Reusable.release.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Reusable/Reusable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reusable/Reusable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Reusable/Reusable.modulemap";
+				PRODUCT_MODULE_NAME = Reusable;
+				PRODUCT_NAME = Reusable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29AC1D1CFBED86083D0EAFA590D3E870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A82ED2CB694205801D27C51B7BE185 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32855EE4B908182D40A20B8D5F718503 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 882E24BE58F69DADA3C997CCADE878A1 /* Pods-BitBeca.release.xcconfig */;
 			buildSettings = {
@@ -708,10 +1401,18 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
+		5D8B5D96901AB27855F9E0554C5C445C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBD73D71D501A044B1F2C6084071AB6 /* Pods-BitBeca.debug.xcconfig */;
+=======
 		3D4B13C920DC42CAAF250BE1AE57D119 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 706D49BE988DD6632D4ACE6FC95E6EEF /* Commons.debug.xcconfig */;
+			baseConfigurationReference = 2371C9BE62AB0EC87B61BF8B5F8826CF /* Commons.debug.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -720,23 +1421,37 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< HEAD
+				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca-Info.plist";
+=======
 				GCC_PREFIX_HEADER = "Target Support Files/Commons/Commons-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Commons/Commons-Info.plist";
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+<<<<<<< HEAD
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+=======
 				MODULEMAP_FILE = "Target Support Files/Commons/Commons.modulemap";
 				PRODUCT_MODULE_NAME = Commons;
 				PRODUCT_NAME = Commons;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+<<<<<<< HEAD
+=======
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -775,43 +1490,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5D8B5D96901AB27855F9E0554C5C445C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBBD73D71D501A044B1F2C6084071AB6 /* Pods-BitBeca.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BitBeca/Pods-BitBeca.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -819,7 +1498,11 @@
 		};
 		678CC45A6609E6031E513E402F07279A /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = D0A4241F5965EFF09B58ED1A30E51B0D /* Details.release.xcconfig */;
+=======
+			baseConfigurationReference = 403A5A1663D2F5F3283D13D9B24C51E1 /* Details.release.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -916,7 +1599,11 @@
 		};
 		869DF383507656B6EB0225AE050263A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 88F5B6E2AF288DC7A9C9F411DBC6956E /* Details.debug.xcconfig */;
+=======
+			baseConfigurationReference = 7B0642FC284058A36BC5FA30338A409A /* Details.debug.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -985,9 +1672,15 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		ACBA9A2EE9DA8D6F0BAB39FA75996E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5A82ED2CB694205801D27C51B7BE185 /* Pods-BitBeca-BitBecaUITests.debug.xcconfig */;
+=======
+		AAE807F44C5A8BFE4C4E4A80963E1996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56C98BD80C5FED7E4F593140E90E121 /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1017,10 +1710,28 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D431D1037DD722C30003D3686EA3A8 /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1107,7 +1818,11 @@
 		};
 		E2721537E69F5A9D56186CF32D3DAE03 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 6663F7CD0A23EB674D64FF3C585C943E /* Commons.release.xcconfig */;
+=======
+			baseConfigurationReference = 691D09E537B89A50FE278D4517EDCB74 /* Commons.release.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1140,6 +1855,7 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		E692A2EF8D5A83B05793ACD640A731C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F56C98BD80C5FED7E4F593140E90E121 /* Pods-BitBeca-BitBecaUITests.release.xcconfig */;
@@ -1181,6 +1897,11 @@
 		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04BD3A28BBD44A31166C8990EDAAB210 /* SwiftLint.debug.xcconfig */;
+=======
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FAEC8CB2406ACD5F836A11835FC5E29 /* SwiftLint.debug.xcconfig */;
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1215,11 +1936,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		213707D87720D37ABB1B61F80571AC12 /* Build configuration list for PBXNativeTarget "Details" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				869DF383507656B6EB0225AE050263A1 /* Debug */,
 				678CC45A6609E6031E513E402F07279A /* Release */,
+=======
+		41C8C477095A12E6005DBF351F2FC430 /* Build configuration list for PBXNativeTarget "Pods-BitBeca-BitBecaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29AC1D1CFBED86083D0EAFA590D3E870 /* Debug */,
+				AAE807F44C5A8BFE4C4E4A80963E1996 /* Release */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1233,11 +1962,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		6D6F753F905E279A47B201B4F05DDB12 /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D8B5D96901AB27855F9E0554C5C445C /* Debug */,
 				2DA7C3A6684D642FB0BA2C560417998E /* Release */,
+=======
+		49B6D84601F69DC7CE866EBFC991FB84 /* Build configuration list for PBXNativeTarget "Reusable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12B0BD943091B9DF11BC41C87BAF3168 /* Debug */,
+				23B2F5F46C376259552CDBD91CA922A8 /* Release */,
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1260,6 +1997,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
+=======
+		DC0BA88CD2534B490270B7B215A0804C /* Build configuration list for PBXNativeTarget "Pods-BitBeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD6719EFC0D01099AA431FD633D1CA2 /* Debug */,
+				32855EE4B908182D40A20B8D5F718503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 /* End XCConfigurationList section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
