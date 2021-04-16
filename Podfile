@@ -10,6 +10,7 @@ target 'BitBeca' do
   pod 'Commons', :git => 'https://github.com/elisa-c/Commons.git'
   pod 'Details', :git => 'https://github.com/elisa-c/Details.git'
   pod 'SwiftLint'
+  pod 'AlamofireImage', '~> 3.4.0'
 
   # Pods for BitBeca
 
