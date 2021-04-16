@@ -24,6 +24,8 @@ enum CoresBitBeca {
 class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableBitcoins: UITableView!
     let myProvider = CriptomoedaProvider()
+    let myImage = BitcoinsTableViewCell()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
@@ -35,6 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
     }
+
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 40
