@@ -37,8 +37,12 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath)
-        return cell
-    }
-}
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
+                // MARK: - Chamar o array
+                cell.labelNameBitcoin.text = "Titulo"
+                cell.labelSiglaBitcoin.text = "sigla"
+                cell.labelPriceBitcoin.text = "R$31,000,00"
+                return cell
+            }
+       }
