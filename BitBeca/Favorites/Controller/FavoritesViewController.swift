@@ -8,6 +8,8 @@
  class FavoritesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var myCollectionView: UICollectionView!
+    
+    //viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
