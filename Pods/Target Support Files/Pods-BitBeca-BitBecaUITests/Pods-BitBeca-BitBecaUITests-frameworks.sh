@@ -177,18 +177,12 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Commons/Commons.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Details/Details.framework"
-<<<<<<< HEAD
-=======
   install_framework "${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework"
->>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Commons/Commons.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Details/Details.framework"
-<<<<<<< HEAD
-=======
   install_framework "${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework"
->>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
