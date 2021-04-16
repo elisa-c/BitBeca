@@ -7,7 +7,7 @@
 
 import Foundation
 
-//class IconProvider{
+// class IconProvider{
 //
 //    func getIcon(){
 //
@@ -25,4 +25,4 @@ import Foundation
 //
 //    }
 //
-//}
+// }
