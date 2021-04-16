@@ -72,6 +72,8 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+<<<<<<< HEAD
+=======
 			<string>The MIT License (MIT)
 
 Copyright (c) 2016 AliSoftware
@@ -103,6 +105,7 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+>>>>>>> d144fa96aa2afb20168527f296cdc4b209007c28
 			<string>The MIT License (MIT)
 
 Copyright (c) 2020 Realm Inc.
