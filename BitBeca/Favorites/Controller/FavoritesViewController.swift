@@ -13,11 +13,12 @@
 
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
+        // viewAuxiliar.layer.cornerRadius = 8
 
     }
     // MARK: - CollectionView Favorites
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20    }
+        return 200    }
     // MARK: - Conteudo da linha
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellFavorites = collectionView.dequeueReusableCell(withReuseIdentifier: "cellFavorites", for: indexPath) as? ListaFavoritesCollectionViewCell
