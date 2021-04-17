@@ -18,9 +18,9 @@ public class DetailsViewController: UIViewController {
     @IBOutlet weak var lastDay: UILabel!
     @IBOutlet weak var lastMonth: UILabel!
     
-    var teste: String = "testee"
-
-
+    
+    
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
 

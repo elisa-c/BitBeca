@@ -103,7 +103,7 @@
                                 <sections/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88j-H3-CZC">
-                                <rect key="frame" x="16" y="45" width="102" height="30"/>
+                                <rect key="frame" x="16" y="98" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Teste Detalhes"/>
                                 <connections>

@@ -24,6 +24,7 @@
 		5922977E2628EAEC000F136F /* CriptomoedaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */; };
 		592297882628EB4E000F136F /* IconProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297862628EB4E000F136F /* IconProvider.swift */; };
 		592297892628EB4E000F136F /* CriptomoedaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297872628EB4E000F136F /* CriptomoedaProvider.swift */; };
+		66CA94F0262B763500F1DF4D /* DateAtual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA94EF262B763500F1DF4D /* DateAtual.swift */; };
 		C33E58FBA509B506207129C5 /* Pods_BitBecaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B993B96309473933C4ABC2 /* Pods_BitBecaTests.framework */; };
 		E088DB828CA19D3B33F3D39C /* Pods_BitBeca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FDBCC341C0DC68AA169975 /* Pods_BitBeca.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptomoedaAPI.swift; sourceTree = "<group>"; };
 		592297862628EB4E000F136F /* IconProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconProvider.swift; sourceTree = "<group>"; };
 		592297872628EB4E000F136F /* CriptomoedaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptomoedaProvider.swift; sourceTree = "<group>"; };
+		66CA94EF262B763500F1DF4D /* DateAtual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAtual.swift; sourceTree = "<group>"; };
 		8CE81A5485BD18FA003D4483 /* Pods_BitBeca_BitBecaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBeca_BitBecaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41390017D48DC12D209D69B /* Pods-BitBeca-BitBecaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca-BitBecaUITests.release.xcconfig"; path = "Target Support Files/Pods-BitBeca-BitBecaUITests/Pods-BitBeca-BitBecaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B764422443D7F24AE1100FA3 /* Pods-BitBeca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBeca.debug.xcconfig"; path = "Target Support Files/Pods-BitBeca/Pods-BitBeca.debug.xcconfig"; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		6654EFB72626225300211E61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				66CA94EE262B75C000F1DF4D /* Funções */,
 				592297852628EB4E000F136F /* Provider */,
 				5922977A2628EAEC000F136F /* Codable */,
 			);
@@ -264,6 +267,15 @@
 				1CC1E1272625DDFA00AB7714 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		66CA94EE262B75C000F1DF4D /* Funções */ = {
+			isa = PBXGroup;
+			children = (
+				66CA94EF262B763500F1DF4D /* DateAtual.swift */,
+			);
+			name = "Funções";
+			path = "Funções";
 			sourceTree = "<group>";
 		};
 		AB30FAE85AD250614D4C4578 /* Frameworks */ = {
@@ -556,6 +568,7 @@
 				592297732628E26D000F136F /* CriptoViewModel.swift in Sources */,
 				592297892628EB4E000F136F /* CriptomoedaProvider.swift in Sources */,
 				1CC1E12A2625DDFA00AB7714 /* SceneDelegate.swift in Sources */,
+				66CA94F0262B763500F1DF4D /* DateAtual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
