@@ -4,10 +4,9 @@
 //
 //  Created by Matheus Golke Cardoso on 15/04/21.
 //
-
 import Foundation
 
-struct APICriptomoedas: Codable {
+struct APICriptomoeda: Codable {
     let assetID, name: String?
     let typeIsCrypto: Int?
     let dataStart, dataEnd, dataQuoteStart, dataQuoteEnd: String?
@@ -37,4 +36,4 @@ struct APICriptomoedas: Codable {
     }
 }
 
-typealias Welcome = [APICriptomoedas]
+typealias APICriptomoedas = [APICriptomoeda]
