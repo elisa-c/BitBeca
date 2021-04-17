@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APICriptomoedas: Codable {
+struct APICriptomoeda: Codable {
     let assetID, name: String?
     let typeIsCrypto: Int?
     let dataStart, dataEnd, dataQuoteStart, dataQuoteEnd: String?
@@ -37,4 +37,4 @@ struct APICriptomoedas: Codable {
     }
 }
 
-typealias Welcome = [APICriptomoedas]
+typealias APICriptomoedas = [APICriptomoeda]

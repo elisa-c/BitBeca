@@ -9,8 +9,6 @@ import UIKit
 import Commons
 import Details
 
-// teste
-
 enum CoresBitBeca {
     case corAbacate
     case corBlack
@@ -24,7 +22,7 @@ enum CoresBitBeca {
 class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableBitcoins: UITableView!
     let myProvider = CriptomoedaProvider()
-
+    var listaCriptoViewModel: [CriptoViewModel]=[]
     @IBOutlet weak var myLabelData: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         getCurrentDateTime()
         self.tableBitcoins.dataSource = self
         self.tableBitcoins.backgroundColor = .black
-        myProvider.getData()
+        getDataCriptomoedas()
     }
 
     // MARK: - Cores
@@ -48,20 +46,41 @@ class ViewController: UIViewController, UITableViewDataSource {
         myLabelData.textColor = UIColor.white
     }
 
+    func getDataCriptomoedas() {
+
+        myProvider.getData { (results) in
+
+            for i in 0...20 {
+                    let criptomoeda = results.filter {$0.typeIsCrypto == 1 && $0.priceUsd ?? 0>0 && (($0.idIcon?.isEmpty) != nil)}
+                        guard let name = criptomoeda[i].name else {return}
+                        guard let sigla = criptomoeda[i].assetID else {return}
+                        guard let price = criptomoeda[i].priceUsd else {return}
+                        guard let idIcon = criptomoeda[i].idIcon else {return}
+                        let criptoAtual = CriptoViewModel(name: name, sigla: sigla, price: price, idIcon: idIcon)
+                        self.listaCriptoViewModel.append(criptoAtual)
+//                        print("Nome \(self.listaCriptoViewModel[i].name)")
+//                        print("Sigla \(self.listaCriptoViewModel[i].sigla)")
+//                        print("price \(String(format: "%.3f", self.listaCriptoViewModel[i].price))")
+//                        print("IdIcont \(self.listaCriptoViewModel[i].idIcon)")
+            }
+            DispatchQueue.main.async {
+                self.tableBitcoins.reloadData()
+            }
+        }
+
+    }
+
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        DispatchQueue.main.async {
-         self.tableBitcoins.reloadData()
-        }
-        return myProvider.listaCriptoViewModel.count
+
+        return listaCriptoViewModel.count
     }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
-                // MARK: - Chamar o array
-               cell.labelNameBitcoin.text = myProvider.listaCriptoViewModel[indexPath.row].name
-               cell.labelSiglaBitcoin.text = myProvider.listaCriptoViewModel[indexPath.row].sigla
-               cell.labelPriceBitcoin.text = String(myProvider.listaCriptoViewModel[indexPath.row].price)
-               let idIcon = myProvider.listaCriptoViewModel[indexPath.row].idIcon
+               cell.labelNameBitcoin.text = listaCriptoViewModel[indexPath.row].name
+               cell.labelSiglaBitcoin.text = listaCriptoViewModel[indexPath.row].sigla
+               cell.labelPriceBitcoin.text = ("$ \(String(format: "%.2f", self.listaCriptoViewModel[indexPath.row].price))")
+               let idIcon = listaCriptoViewModel[indexPath.row].idIcon
                let id = idIcon.replacingOccurrences(of: "-", with: "")
                cell.getIcon(idIcon: id)
                return cell
