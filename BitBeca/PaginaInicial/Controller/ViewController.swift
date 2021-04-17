@@ -20,44 +20,47 @@ enum CoresBitBeca {
     }
 }
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     // MARK: - IBOutlets
-
+    
     @IBOutlet weak var tableBitcoins: UITableView!
     @IBAction func testeDetalhes(_ sender: Any) {
-        let vc = DetailsLibrary.DetailsViewController.fromSB()
-        navigationController?.pushViewController(vc, animated: true)
+        let vc = DetailsLibrary.DetailsViewController.self
+        let vcShow = vc.fromSB()
+        navigationController?.pushViewController(vcShow, animated: true)
+        
     }
-
+    
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
     @IBOutlet weak var myLabelData: UILabel!
-
+    
     // MARK: - Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
         getCurrentDateTime()
         self.tableBitcoins.dataSource = self
+        self.tableBitcoins.delegate = self
         self.tableBitcoins.backgroundColor = .black
         getDataCriptomoedas()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-
-            let appearance = UINavigationBarAppearance()
-            appearance.backgroundColor = .black
-            appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
-            navigationController?.navigationBar.tintColor = .white
-            navigationController?.navigationBar.standardAppearance = appearance
-            navigationController?.navigationBar.compactAppearance = appearance
-            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        super.viewWillAppear(animated)
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-
+    
     // MARK: - Cores
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
@@ -67,14 +70,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let data = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "dd MMMM YYYY"
+        formatter.locale = Locale(identifier: "pt_BR")
         myLabelData.text = formatter.string(from: data)
         myLabelData.textColor = UIColor.white
     }
-
+    
     func getDataCriptomoedas() {
-
+        
         myProvider.getData { (results) in
-
+            
             for i in 0...20 {
                 let criptomoeda = results.filter {$0.typeIsCrypto == 1 && $0.priceUsd ?? 0>0 && (($0.idIcon?.isEmpty) != nil)}
                 guard let name = criptomoeda[i].name else {return}
@@ -92,16 +96,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 self.tableBitcoins.reloadData()
             }
         }
-
+        
     }
-
+    
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         return listaCriptoViewModel.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = #colorLiteral(red: 0.0392, green: 0.4078, blue: 0, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
+        
         cell.labelNameBitcoin.text = listaCriptoViewModel[indexPath.row].name
         cell.labelSiglaBitcoin.text = listaCriptoViewModel[indexPath.row].sigla
         cell.labelPriceBitcoin.text = ("$ \(String(format: "%.2f", self.listaCriptoViewModel[indexPath.row].price))")
@@ -109,14 +118,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let id = idIcon.replacingOccurrences(of: "-", with: "")
         cell.getIcon(idIcon: id)
         return cell
-
+        
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("sometghion")
+        let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
+        
+        
     }
-
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        print("jjjj")
-    }
+    
+    
+    
 }
+
+

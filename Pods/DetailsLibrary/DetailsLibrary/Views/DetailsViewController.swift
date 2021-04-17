@@ -17,6 +17,8 @@ public class DetailsViewController: UIViewController {
     @IBOutlet weak var lastHour: UILabel!
     @IBOutlet weak var lastDay: UILabel!
     @IBOutlet weak var lastMonth: UILabel!
+    
+    var teste: String = "testee"
 
 
     public override func viewDidLoad() {
@@ -27,6 +29,8 @@ public class DetailsViewController: UIViewController {
 //        borderButton.layer.borderColor = UIColor.white.cgColor
 
     }
+    
+    
 
 
 
