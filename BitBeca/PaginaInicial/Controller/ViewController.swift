@@ -26,16 +26,26 @@ class ViewController: UIViewController, UITableViewDataSource {
     let myProvider = CriptomoedaProvider()
     let myImage = BitcoinsTableViewCell()
 
+    @IBOutlet weak var myLabelData: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
         myProvider.getData()
+        getCurrentDateTime()
         self.tableBitcoins.dataSource = self
         self.tableBitcoins.backgroundColor = .black
     }
     // MARK: - Cores
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
+    }
+    // MARK: - Funcção para gerar a data atual
+    func getCurrentDateTime() {
+        let data = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMMM YYYY"
+        myLabelData.text = formatter.string(from: data)
+        myLabelData.textColor = UIColor.white
     }
 
     // MARK: - TableView Tela Principal
