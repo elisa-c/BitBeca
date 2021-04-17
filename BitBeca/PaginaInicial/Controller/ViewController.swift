@@ -32,6 +32,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
     @IBOutlet weak var myLabelData: UILabel!
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
@@ -39,6 +42,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableBitcoins.dataSource = self
         self.tableBitcoins.backgroundColor = .black
         getDataCriptomoedas()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = .black
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+            navigationController?.navigationBar.tintColor = .white
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.compactAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 
     // MARK: - Cores
