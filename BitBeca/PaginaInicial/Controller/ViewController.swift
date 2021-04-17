@@ -8,6 +8,7 @@
 import UIKit
 import Commons
 import Details
+import DetailsLibrary
 
 // teste
 
@@ -21,10 +22,16 @@ enum CoresBitBeca {
         }
     }
 }
+
 class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableBitcoins: UITableView!
     let myProvider = CriptomoedaProvider()
     let myImage = BitcoinsTableViewCell()
+
+    @IBAction func testeDetalhes(_ sender: Any) {
+        let vc = DetailsLibrary.DetailsViewController.fromSB()
+        self.present(vc, animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

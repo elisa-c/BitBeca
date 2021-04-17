@@ -1,11 +1,15 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '10.0'
+platform :ios, '10.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/elisa-c/DetailsPodSpecs'
+
 
 target 'BitBeca' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-
+  pod 'DetailsLibrary'
   pod 'Reusable'
   pod 'Commons', :git => 'https://github.com/elisa-c/Commons.git'
   pod 'Details', :git => 'https://github.com/elisa-c/Details.git'
