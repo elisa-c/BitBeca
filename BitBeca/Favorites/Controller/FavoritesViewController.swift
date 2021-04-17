@@ -8,17 +8,22 @@
  class FavoritesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var myCollectionView: UICollectionView!
+    @IBOutlet weak var LabelDateFavorites: UILabel!
+
+    let dataAtual = DateAtual()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
-        // viewAuxiliar.layer.cornerRadius = 8
+        LabelDateFavorites.text = dataAtual.getCurrentDateTime()
 
     }
     // MARK: - CollectionView Favorites
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10    }
+
     // MARK: - Conteudo da linha
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellFavorites = collectionView.dequeueReusableCell(withReuseIdentifier: "cellFavorites", for: indexPath) as? ListaFavoritesCollectionViewCell
@@ -31,6 +36,6 @@
     // MARK: - Layout da collection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let larguraCell = collectionView.bounds.width / 2
-        return CGSize(width: larguraCell-15, height: 160)
+        return CGSize(width: larguraCell - 10, height: 175)
     }
  }
