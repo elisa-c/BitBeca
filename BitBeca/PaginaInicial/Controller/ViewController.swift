@@ -24,17 +24,17 @@ enum CoresBitBeca {
 class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableBitcoins: UITableView!
     let myProvider = CriptomoedaProvider()
-    let myImage = BitcoinsTableViewCell()
 
     @IBOutlet weak var myLabelData: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
-        myProvider.getData()
         getCurrentDateTime()
         self.tableBitcoins.dataSource = self
         self.tableBitcoins.backgroundColor = .black
+        myProvider.getData()
     }
+
     // MARK: - Cores
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
@@ -50,14 +50,21 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 40
+        DispatchQueue.main.async {
+         self.tableBitcoins.reloadData()
+        }
+        return myProvider.listaCriptoViewModel.count
     }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
                 // MARK: - Chamar o array
-                cell.labelNameBitcoin.text = "Titulo"
-                cell.labelSiglaBitcoin.text = "sigla"
-                cell.labelPriceBitcoin.text = "R$31,000,00"
-                return cell
+               cell.labelNameBitcoin.text = myProvider.listaCriptoViewModel[indexPath.row].name
+               cell.labelSiglaBitcoin.text = myProvider.listaCriptoViewModel[indexPath.row].sigla
+               cell.labelPriceBitcoin.text = String(myProvider.listaCriptoViewModel[indexPath.row].price)
+               let idIcon = myProvider.listaCriptoViewModel[indexPath.row].idIcon
+               let id = idIcon.replacingOccurrences(of: "-", with: "")
+               cell.getIcon(idIcon: id)
+               return cell
+
             }
        }

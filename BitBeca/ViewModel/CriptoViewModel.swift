@@ -11,4 +11,5 @@ struct CriptoViewModel {
     let name: String
     let sigla: String
     let price: Double
+    let idIcon: String
 }

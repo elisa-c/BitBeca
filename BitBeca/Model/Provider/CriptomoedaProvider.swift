@@ -21,15 +21,16 @@ class CriptomoedaProvider {
                 let criptomoedas = try JSONDecoder().decode([APICriptomoedas].self, from: data)
                 // Implementar a chamada de todos os itens da API
                 for int in 0...9 {
-                    let criptomoeda = criptomoedas.filter {$0.typeIsCrypto == 1 && $0.priceUsd ?? 0>0}
+                    let criptomoeda = criptomoedas.filter {$0.typeIsCrypto == 1 && $0.priceUsd ?? 0>0 && (($0.idIcon?.isEmpty) != nil)}
                     guard let name = criptomoeda[int].name else {return}
                     guard let sigla = criptomoeda[int].assetID else {return}
                     guard let price = criptomoeda[int].priceUsd else {return}
-                    let criptoAtual = CriptoViewModel(name: name, sigla: sigla, price: price)
+                    guard let idIcon = criptomoeda[int].idIcon else {return}
+                    let criptoAtual = CriptoViewModel(name: name, sigla: sigla, price: price, idIcon: idIcon)
                     self.listaCriptoViewModel.append(criptoAtual)
-                    print("Nome \(self.listaCriptoViewModel[int].name)")
-                    print("Sigla \(self.listaCriptoViewModel[int].sigla)")
-                    print("price \(String(format: "%.2f", self.listaCriptoViewModel[int].price))")
+//                    print("Nome \(self.listaCriptoViewModel[int].name)")
+//                    print("Sigla \(self.listaCriptoViewModel[int].sigla)")
+//                    print("price \(String(format: "%.2f", self.listaCriptoViewModel[int].price))")
                 }
             } catch {
                 print(error.localizedDescription)
