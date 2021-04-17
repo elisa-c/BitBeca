@@ -7,6 +7,7 @@
 import UIKit
 import Commons
 import Details
+import DetailsLibrary
 
 enum CoresBitBeca {
     case corAbacate
@@ -19,7 +20,15 @@ enum CoresBitBeca {
     }
 }
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    // MARK: - IBOutlets
+
     @IBOutlet weak var tableBitcoins: UITableView!
+    @IBAction func testeDetalhes(_ sender: Any) {
+        let vc = DetailsLibrary.DetailsViewController.fromSB()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
     @IBOutlet weak var myLabelData: UILabel!
