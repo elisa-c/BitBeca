@@ -146,6 +146,7 @@
                     <navigationItem key="navigationItem" id="unM-cd-N6U"/>
                     <connections>
                         <outlet property="myLabelData" destination="oEQ-gL-zPH" id="4mJ-MC-x12"/>
+                        <outlet property="pesquisarCriptos" destination="3NN-eS-uxq" id="72n-vR-mzZ"/>
                         <outlet property="tableBitcoins" destination="Rx1-io-irE" id="uTD-2g-3zt"/>
                     </connections>
                 </viewController>

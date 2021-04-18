@@ -19,20 +19,21 @@ enum CoresBitBeca {
         }
     }
 }
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
     @IBOutlet weak var tableBitcoins: UITableView!
+    @IBOutlet weak var myLabelData: UILabel!
+    @IBOutlet weak var pesquisarCriptos: UISearchBar!
+
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
-    @IBOutlet weak var myLabelData: UILabel!
-
     let dataAtual = DateAtual()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
-        // getCurrentDateTime()
-        self.tableBitcoins.dataSource = self
-        self.tableBitcoins.backgroundColor = .black
+        tableBitcoins.dataSource = self
+        tableBitcoins.backgroundColor = .black
+        pesquisarCriptos.delegate = self
         getDataCriptomoedas()
         myLabelData.text = dataAtual.getCurrentDateTime()
 
@@ -42,9 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
     }
-
-    // formatter.string(from: data)
-      //  myLabelData.textColor = UIColor.white
 
     func getDataCriptomoedas() {
         myProvider.getData { (results) in
@@ -69,9 +67,9 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return listaCriptoViewModel.count
     }
+    // MARK: - Conteudo da TableView
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
                cell.labelNameBitcoin.text = listaCriptoViewModel[indexPath.row].name
@@ -81,6 +79,10 @@ class ViewController: UIViewController, UITableViewDataSource {
                let id = idIcon.replacingOccurrences(of: "-", with: "")
                cell.getIcon(idIcon: id)
                return cell
-
             }
-       }
+    // MARK: - SearchBar
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        let filtrolistaCriptos = NSPredicate(format: "name contains %@", searchText)
+        print(searchText)
+    }
+    }
