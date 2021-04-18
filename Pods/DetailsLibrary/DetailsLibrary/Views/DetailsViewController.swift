@@ -8,7 +8,7 @@
 import UIKit
 
 public class DetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var coinAbbreviation: UILabel!
     @IBOutlet weak var borderButton: UIView!
     @IBOutlet weak var coinImage: UIImageView!
@@ -18,23 +18,34 @@ public class DetailsViewController: UIViewController {
     @IBOutlet weak var lastDay: UILabel!
     @IBOutlet weak var lastMonth: UILabel!
     
-    
-    
+    var teste: String = ""
     
     public override func viewDidLoad() {
         super.viewDidLoad()
 
+        let button = UIButton(frame: CGRect(x: 0, y: 220, width: 100, height: 50))
+        button.center = self.view.center
+        button.backgroundColor = .none
+        button.setTitle("ADICIONAR", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+
+        
+        self.view.addSubview(button)
+        
         // adiciona borda à view que contém o botão
-//        borderButton.layer.borderWidth = 10
-//        borderButton.layer.borderColor = UIColor.white.cgColor
-
-    }
+        //        borderButton.layer.borderWidth = 10
+        //        borderButton.layer.borderColor = UIColor.white.cgColor
+        }
     
+        @objc func buttonAction(sender: UIButton!) {
+          print("teste")
+        }
+   
     
-
-
-
 }
+
+
 
 
 extension UIViewController {
