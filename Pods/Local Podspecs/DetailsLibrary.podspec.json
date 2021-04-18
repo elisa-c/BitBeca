@@ -1,0 +1,26 @@
+{
+  "name": "DetailsLibrary",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "summary": "Details view for modularization",
+  "requires_arc": true,
+  "version": "0.1.1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Elisa Camillo": "elisatcamillo@gmail.com"
+  },
+  "homepage": "https://github.com/elisa-c/DetailsLibrary",
+  "source": {
+    "git": "https://github.com/elisa-c/DetailsLibrary.git",
+    "tag": "0.1.1"
+  },
+  "frameworks": "UIKit",
+  "source_files": "DetailsLibrary/**/*.{swift}",
+  "resources": "DetailsLibrary/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
+  "swift_versions": "5",
+  "swift_version": "5"
+}

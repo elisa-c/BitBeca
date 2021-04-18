@@ -9,7 +9,8 @@ target 'BitBeca' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'DetailsLibrary'
+  pod 'DetailsLibrary', :git => 'https://github.com/elisa-c/DetailsLibrary.git'
+
   pod 'Reusable'
   pod 'Commons', :git => 'https://github.com/elisa-c/Commons.git'
   pod 'Details', :git => 'https://github.com/elisa-c/Details.git'

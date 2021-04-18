@@ -12,10 +12,16 @@
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
         // viewAuxiliar.layer.cornerRadius = 8
+
+        let defaults = UserDefaults.standard
+        let arrayTeste = ["um favorito", "outro favorito"]
+        defaults.set(arrayTeste, forKey: "arrayTeste")
     }
+
     // MARK: - CollectionView Favorites
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10    }
+
     // MARK: - Conteudo da linha
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellFavorites = collectionView.dequeueReusableCell(withReuseIdentifier: "cellFavorites", for: indexPath) as? ListaFavoritesCollectionViewCell

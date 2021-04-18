@@ -16,7 +16,7 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.4.0)
   - Commons (from `https://github.com/elisa-c/Commons.git`)
   - Details (from `https://github.com/elisa-c/Details.git`)
-  - DetailsLibrary
+  - DetailsLibrary (from `https://github.com/elisa-c/DetailsLibrary.git`)
   - Reusable
   - SwiftLint
 
@@ -26,14 +26,14 @@ SPEC REPOS:
     - AlamofireImage
     - Reusable
     - SwiftLint
-  https://github.com/elisa-c/DetailsPodSpecs.git:
-    - DetailsLibrary
 
 EXTERNAL SOURCES:
   Commons:
     :git: https://github.com/elisa-c/Commons.git
   Details:
     :git: https://github.com/elisa-c/Details.git
+  DetailsLibrary:
+    :git: https://github.com/elisa-c/DetailsLibrary.git
 
 CHECKOUT OPTIONS:
   Commons:
@@ -42,16 +42,19 @@ CHECKOUT OPTIONS:
   Details:
     :commit: 00eab9161522fc749040ca874663eb279521ac00
     :git: https://github.com/elisa-c/Details.git
+  DetailsLibrary:
+    :commit: b22b98d70c3c14b1ea697dd7b30a44ae2a447022
+    :git: https://github.com/elisa-c/DetailsLibrary.git
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
   Commons: 9f6140a50d54a56fe3a8302abcec976ebd5d47c9
   Details: 4daa77bc92a81f7797ed7c26bab836fa9bf07a3b
-  DetailsLibrary: e8bd490a62657d9b361e8191ad28e84828cfa723
+  DetailsLibrary: 60304fb53109434c5860607697ca70ae2d5e7aa7
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: f8a3ad4855953ac43dbfe61cdb7800c9a260bd64
+PODFILE CHECKSUM: 0d93b937ac42ee5d4c46bfd9b1d0b36ae5da1ab2
 
 COCOAPODS: 1.10.1

@@ -122,38 +122,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
-        testeAPIDetalhes(siglaDetalhes: siglaDetalhes, completion: {(result) in
-            print(result[0].volume1HrsUsd!)
+
+        let provider = DetailsProvider()
+
+        provider.getDetails(abrevDetails: siglaDetalhes, completion: {(result) in
+            print(result[0].name!)
 
             DispatchQueue.main.async {
                 let vc = DetailsLibrary.DetailsViewController.self
                 let vcShow = vc.fromSB()
+
+                let testeFunc = vc.testando(DetailsViewController.init())
+                testeFunc("teste")
                 self.navigationController?.pushViewController(vcShow, animated: true)
-
-                        }
-
-        })
-    }
-
-    func testeAPIDetalhes(siglaDetalhes: String, completion:@escaping([APICriptomoeda]) -> Void) {
-        let apikey = "1F8A5E86-F1C9-41C7-B8BB-9DB1B81FDE7C"
-
-        let baseURL = "https://rest.coinapi.io/v1/assets/\(siglaDetalhes)?apikey=\(apikey)"
-
-        guard let url = URL(string: baseURL) else {return}
-
-        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-            guard let data = data, error == nil else {return}
-            do {
-                let criptomoedas = try JSONDecoder().decode(APICriptomoedas.self, from: data)
-                completion(criptomoedas)
-            } catch {
-                print(error)
             }
 
-        }
-
-        task.resume()
+        })
     }
 
 }
