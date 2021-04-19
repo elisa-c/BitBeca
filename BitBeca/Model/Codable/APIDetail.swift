@@ -28,5 +28,3 @@ struct APIDetail: Codable {
         case idIcon = "id_icon"
     }
 }
-
-typealias APIDetails = [APIDetail]

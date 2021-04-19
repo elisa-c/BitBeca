@@ -30,6 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         navigationController?.pushViewController(vcShow, animated: true)
     }
 
+    var request = DetailsProvider()
+    var criptoEscolhida: CriptoViewModel?
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
     @IBOutlet weak var myLabelData: UILabel!
@@ -120,24 +122,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
 
+    func teste() {
+
+        guard let siglaAtual = criptoEscolhida?.sigla else {return}
+        request.getDetails(abrevDetails: siglaAtual) { (resultado) in
+            guard let ultimoMes = resultado.volume1MthUsd else {return}
+            guard let ultimoDia = resultado.volume1DayUsd else {return}
+            guard let ultimaHora = resultado.volume1HrsUsd else {return}
+            DetailsLibrary.DetailsViewController().setLabelLastMonst(lastMonth: ultimoMes)
+            DetailsLibrary.DetailsViewController().setLabelLastDay(lastDay: ultimoDia)
+            DetailsLibrary.DetailsViewController().setLabelLastHour(lastHour: ultimaHora)
+        }
+
+    }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
-
-        let provider = DetailsProvider()
-
-        provider.getDetails(abrevDetails: siglaDetalhes, completion: {(result) in
-            print(result[0].name!)
-
-            DispatchQueue.main.async {
-                let vc = DetailsLibrary.DetailsViewController.self
-                let vcShow = vc.fromSB()
-
-                let testeFunc = vc.testando(DetailsViewController.init())
-                testeFunc("teste")
-                self.navigationController?.pushViewController(vcShow, animated: true)
-            }
-
-        })
+        let criptomoeda = listaCriptoViewModel[indexPath.row]
+        let storyboard = UIStoryboard(name: "Details", bundle: DetailsLibrary.DetailsViewController.bundleUI)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DetailsID") as! DetailsLibrary.DetailsViewController
+        // controller.criptoEscolhida = criptomoeda
+        self.present(controller, animated: true, completion: nil)
     }
 
 }

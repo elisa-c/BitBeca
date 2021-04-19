@@ -23,6 +23,7 @@
 		5922977E2628EAEC000F136F /* CriptomoedaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */; };
 		592297882628EB4E000F136F /* IconProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297862628EB4E000F136F /* IconProvider.swift */; };
 		592297892628EB4E000F136F /* CriptomoedaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592297872628EB4E000F136F /* CriptomoedaProvider.swift */; };
+		59FAAC15262CCF470064689A /* DetalhesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FAAC14262CCF470064689A /* DetalhesViewModel.swift */; };
 		6626C574262C95F8006A4292 /* DetailsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626C573262C95F8006A4292 /* DetailsProvider.swift */; };
 		6626C579262C966A006A4292 /* APIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626C578262C966A006A4292 /* APIDetail.swift */; };
 		66CA94F0262B763500F1DF4D /* DateAtual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA94EF262B763500F1DF4D /* DateAtual.swift */; };
@@ -76,6 +77,7 @@
 		5922977C2628EAEC000F136F /* CriptomoedaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptomoedaAPI.swift; sourceTree = "<group>"; };
 		592297862628EB4E000F136F /* IconProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconProvider.swift; sourceTree = "<group>"; };
 		592297872628EB4E000F136F /* CriptomoedaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriptomoedaProvider.swift; sourceTree = "<group>"; };
+		59FAAC14262CCF470064689A /* DetalhesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewModel.swift; sourceTree = "<group>"; };
 		5D52B7171665FDD86FAA5312 /* Pods-BitBecaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBecaTests.release.xcconfig"; path = "Target Support Files/Pods-BitBecaTests/Pods-BitBecaTests.release.xcconfig"; sourceTree = "<group>"; };
 		6626C573262C95F8006A4292 /* DetailsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsProvider.swift; sourceTree = "<group>"; };
 		6626C578262C966A006A4292 /* APIDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDetail.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				592297722628E26D000F136F /* CriptoViewModel.swift */,
+				59FAAC14262CCF470064689A /* DetalhesViewModel.swift */,
 			);
 			name = ViewModel;
 			path = BitBeca/ViewModel;
@@ -577,6 +580,7 @@
 				592297892628EB4E000F136F /* CriptomoedaProvider.swift in Sources */,
 				1CC1E12A2625DDFA00AB7714 /* SceneDelegate.swift in Sources */,
 				66CA94F0262B763500F1DF4D /* DateAtual.swift in Sources */,
+				59FAAC15262CCF470064689A /* DetalhesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

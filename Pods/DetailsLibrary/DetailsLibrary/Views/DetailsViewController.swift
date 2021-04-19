@@ -4,8 +4,32 @@
 //
 //  Created by Elisa Camillo on 15/04/21.
 //
-
+import Foundation
 import UIKit
+
+
+
+//public struct DetailsViewModel {
+//
+//    public var idIcon: String
+//    public var sigla:String
+//    public var price:Double
+//    public var ultimaHora:Double
+//    public var ultimoMes:Double
+//    public var ultimoDia:Double
+//    public var delegate: DetailViewDelegate
+//
+//    public init(idIcon: String, sigla: String, price: Double, ultimaHora: Double, ultimoMes: Double, ultimoDia: Double) {
+//        self.idIcon = idIcon
+//        self.sigla = sigla
+//        self.price = price
+//        self.ultimaHora = ultimaHora
+//        self.ultimoMes = ultimoMes
+//        self.ultimoDia = ultimoDia
+//    }
+//
+//}
+
 
 public class DetailsViewController: UIViewController {
     
@@ -23,6 +47,7 @@ public class DetailsViewController: UIViewController {
     var isFavorite: Bool = false
     let defaults = UserDefaults.standard
     var arrayOfFav:[String] = []
+    //var criptomoedaEscolhida:De
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +78,20 @@ public class DetailsViewController: UIViewController {
                 isFavorite = true
             }
         }
+    }
+    
+
+    
+    public func setLabelLastMonst(lastMonth: Double){
+        self.lastMonth.text = String(lastMonth)
+    }
+    
+    public func setLabelLastDay(lastDay: Double){
+        self.lastDay.text = String(lastDay)
+    }
+    
+    public func setLabelLastHour(lastHour: Double){
+        self.lastHour.text = String(lastHour)
     }
     
     @objc public func buttonAction(sender: UIButton!) {
