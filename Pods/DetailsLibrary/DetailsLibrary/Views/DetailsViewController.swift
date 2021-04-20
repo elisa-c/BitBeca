@@ -27,10 +27,6 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        print(teste)
-        print("sigla no viewDidLoad: \(sigla)")
-        print("self.sigla no viewDidLoad: \(self.sigla)")
-        print("--------------")
 
     }
     
@@ -68,33 +64,31 @@ public class DetailsViewController: UIViewController {
     
     public init(sigla: String) {
         super.init(nibName: nil, bundle: nil)
-        print(teste)
         self.sigla = sigla
-        print("--------------")
-        print("sigla no init: \(sigla)")
-        print("self.sigla no init: \(self.sigla)")
-        print("--------------")
-        
     }
 
     
     public override func viewDidAppear(_ animated: Bool) {
 
         let provider = DetailsAPI()
-        let a = "PLN"
-        print(teste)
-        print("self.sigla didappear: \(self.sigla)")
-
         
         provider.getDetails(abrevDetails: teste, completion: {(result) in
             DispatchQueue.main.async {
-                print("--------------")
-                print("viewDidAppear dispatchQueue")
+                
                 self.coinAbbreviation?.text = result.abbreviation!
-                self.coinValue?.text = String(format: "%.2f", result.priceUsd!)
-                self.lastHour?.text = String(format: "%.2f", result.volume1HrsUsd!)
-                self.lastDay?.text = String(format: "%.2f", result.volume1DayUsd!)
-                self.lastMonth?.text = String(format: "%.2f", result.volume1MthUsd!)
+                
+                guard let price = result.priceUsd else {return}
+                self.coinValue?.text = ("$ \(String(format: "%.2f", price))")
+        
+                guard let lastHour = result.volume1DayUsd else {return}
+                self.lastHour?.text = ("$ \(String(format: "%.2f", lastHour))")
+                
+                guard let lastDay = result.volume1DayUsd else {return}
+                self.lastDay?.text = ("$ \(String(format: "%.2f", lastDay))")
+                
+                guard let lastMonth = result.volume1MthUsd else {return}
+                self.lastMonth?.text = ("$ \(String(format: "%.2f", lastMonth))")
+                
                 let newIconID = result.idIcon!.replacingOccurrences(of: "-", with: "")
 
                 let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newIconID).png"
