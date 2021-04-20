@@ -11,6 +11,7 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
     let dataAtual = DateAtual()
     let defaults = UserDefaults.standard
     var localArray: [String] = []
+    public var teste: [CriptoViewModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,15 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
         }
 
         print(currentFavs)
+        myCollectionView.reloadData()
+
+        var listaFavoritos = AppModel.sharedInstance.sharedArray
+        guard let numero = listaFavoritos?.count else {return}
+        print(numero)
     }
 
     override func viewDidAppear(_ animated: Bool) {
+
     }
 
     // MARK: - CollectionView Favorites
