@@ -46,7 +46,8 @@ class CriptomoedaProvider {
 
             do {
                 let criptomoedas = try JSONDecoder().decode(APICriptomoedas.self, from: responseBody)
-                completion(criptomoedas)
+                let criptomoeda = criptomoedas.filter {$0.typeIsCrypto == 1 && $0.priceUsd ?? 0>0 && (($0.idIcon?.isEmpty) != nil)}
+                completion(criptomoeda)
             } catch {
                 print("Erro na decodificação: \(error)")
 
