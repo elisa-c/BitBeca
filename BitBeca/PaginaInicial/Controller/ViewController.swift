@@ -30,7 +30,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var listaCriptoViewModel: [CriptoViewModel]=[]
     var filteredList: [CriptoViewModel] = []
     @IBOutlet weak var myLabelData: UILabel!
-
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -42,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         getDataCriptomoedas()
         myLabelData.text = dataAtual.getCurrentDateTime()
         pesquisarCriptomoedas.delegate = self
+        pesquisarCriptomoedas.isAccessibilityElement = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +57,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         navigationController?.navigationBar.compactAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-
     // MARK: - Cores
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada

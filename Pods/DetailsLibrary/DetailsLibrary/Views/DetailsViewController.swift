@@ -94,6 +94,7 @@ public class DetailsViewController: UIViewController {
                 let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_16/\(newIconID).png"
                 guard let imageURL = URL(string: baseURL) else {return}
                 self.coinImage.af_setImage(withURL: imageURL)
+                self.coinImage.heightAnchor
 
             }
 
