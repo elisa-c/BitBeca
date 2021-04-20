@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - IBOutlets
 
     @IBOutlet weak var tableBitcoins: UITableView!
-
+    let dataAtual = DateAtual()
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
     @IBOutlet weak var myLabelData: UILabel!
@@ -34,11 +34,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
-        getCurrentDateTime()
         self.tableBitcoins.dataSource = self
         self.tableBitcoins.delegate = self
         self.tableBitcoins.backgroundColor = .black
         getDataCriptomoedas()
+        myLabelData.text = dataAtual.getCurrentDateTime()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -59,16 +59,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func cores(cor: CoresBitBeca) {
         self.view.backgroundColor = cor.corSelecionada
     }
-    // MARK: - Funcção para gerar a data atual
-    func getCurrentDateTime() {
-        let data = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMMM YYYY"
-        formatter.locale = Locale(identifier: "pt_BR")
-        myLabelData.text = formatter.string(from: data)
-        myLabelData.textColor = UIColor.white
-    }
-
     func getDataCriptomoedas() {
         myProvider.getData { (results) in
 

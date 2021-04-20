@@ -6,13 +6,15 @@
  class FavoritesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var myCollectionView: UICollectionView!
+    @IBOutlet weak var myDateFavorites: UILabel!
+    let dataAtual = DateAtual()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
         navigationController?.setNavigationBarHidden(true, animated: false)
-
+        myDateFavorites.text = dataAtual.getCurrentDateTime()
     }
 
     // MARK: - CollectionView Favorites

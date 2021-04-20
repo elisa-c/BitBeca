@@ -282,6 +282,7 @@
                     <navigationItem key="navigationItem" id="nFw-UW-Bvh"/>
                     <connections>
                         <outlet property="myCollectionView" destination="Up9-Ah-jk2" id="R9Y-M0-8yp"/>
+                        <outlet property="myDateFavorites" destination="A4E-Be-IE1" id="nJV-Mi-O7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VnZ-vv-2fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

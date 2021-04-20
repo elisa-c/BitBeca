@@ -12,7 +12,7 @@
 		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>AlamofireImage.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>AlamofireImage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Commons.xcscheme</key>
 		<dict>
@@ -32,7 +32,7 @@
 		<key>Commons.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>6</integer>
 		</dict>
 		<key>Details.xcscheme</key>
 		<dict>
@@ -42,12 +42,12 @@
 		<key>Details.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>7</integer>
 		</dict>
 		<key>DetailsLibrary.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-BitBeca-BitBecaUITests.xcscheme</key>
 		<dict>
@@ -57,7 +57,7 @@
 		<key>Pods-BitBeca-BitBecaUITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Pods-BitBeca.xcscheme</key>
 		<dict>
@@ -67,7 +67,7 @@
 		<key>Pods-BitBeca.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-BitBecaTests.xcscheme</key>
 		<dict>
@@ -77,7 +77,7 @@
 		<key>Pods-BitBecaTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Reusable.xcscheme</key>
 		<dict>
@@ -87,7 +87,7 @@
 		<key>Reusable.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>8</integer>
 		</dict>
 		<key>SwiftLint.xcscheme</key>
 		<dict>
@@ -97,7 +97,7 @@
 		<key>SwiftLint.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 </dict>
