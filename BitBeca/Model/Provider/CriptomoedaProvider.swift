@@ -6,23 +6,16 @@
 //
 import Foundation
 
-enum Errors: String {
-    case a = "There is something wrong with your request"
-
-}
-
 class CriptomoedaProvider {
 
     func getData(completion:@escaping([APICriptomoeda]) -> Void) {
 
-        //        let urlString = "https://rest.coinapi.io/v1/assets/?apikey=1F8A5E86-F1C9-41C7-B8BB-9DB1B81FDE7C"
-        let urlString = "https://rest.coinapi.io/v1/assets/"
+                let urlString = "https://rest.coinapi.io/v1/assets/?apikey=1F8A5E86-F1C9-41C7-B8BB-9DB1B81FDE7C"
+//        let urlString = "https://rest.coinapi.io/v1/assets/"
 
         guard let url = URL(string: urlString) else {return}
 
         let task = URLSession.shared.dataTask(with: url) { ( responseBody, response, error) in
-            //            print(error)
-            //            guard let data = data, error == nil else {return}
             guard let data = response else {return}
 
             let response = response as! HTTPURLResponse
@@ -46,7 +39,7 @@ class CriptomoedaProvider {
                     print("550 No data -- You requested specific single item that we don't have at this")
                     break
                 default:
-                    print("Error")
+                    print("")
                     break
                 }
             }
