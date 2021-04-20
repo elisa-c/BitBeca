@@ -19,14 +19,16 @@ enum CoresBitBeca {
         }
     }
 }
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     // MARK: - IBOutlets
 
+    @IBOutlet weak var pesquisarCriptomoedas: UISearchBar!
     @IBOutlet weak var tableBitcoins: UITableView!
     let dataAtual = DateAtual()
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
+    var filteredList: [CriptoViewModel] = []
     @IBOutlet weak var myLabelData: UILabel!
 
     // MARK: - Lifecycle
@@ -39,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableBitcoins.backgroundColor = .black
         getDataCriptomoedas()
         myLabelData.text = dataAtual.getCurrentDateTime()
+        pesquisarCriptomoedas.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -74,6 +77,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             DispatchQueue.main.async {
                 self.tableBitcoins.reloadData()
             }
+            self.filteredList = self.listaCriptoViewModel
         }
 
     }
@@ -81,7 +85,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return listaCriptoViewModel.count
+        return filteredList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
@@ -90,10 +94,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         backgroundView.backgroundColor = #colorLiteral(red: 0.0392, green: 0.4078, blue: 0, alpha: 1)
         cell.selectedBackgroundView = backgroundView
 
-        cell.labelNameBitcoin.text = listaCriptoViewModel[indexPath.row].name
-        cell.labelSiglaBitcoin.text = listaCriptoViewModel[indexPath.row].sigla
-        cell.labelPriceBitcoin.text = ("$ \(String(format: "%.2f", self.listaCriptoViewModel[indexPath.row].price))")
-        let idIcon = listaCriptoViewModel[indexPath.row].idIcon
+        cell.labelNameBitcoin.text = filteredList[indexPath.row].name
+        cell.labelSiglaBitcoin.text = filteredList[indexPath.row].sigla
+        cell.labelPriceBitcoin.text = ("$ \(String(format: "%.2f", self.filteredList[indexPath.row].price))")
+        let idIcon = filteredList[indexPath.row].idIcon
         let id = idIcon.replacingOccurrences(of: "-", with: "")
         cell.getIcon(idIcon: id)
         return cell
@@ -108,12 +112,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? DetailsViewController {
                 vc.teste = siglaDetalhes
                 vc.loadViewIfNeeded()
-
-                self.navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.pushViewController(vc, animated: true)
 
             }
 
         }
     }
 
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredList = []
+        if searchText == ""{
+            filteredList = listaCriptoViewModel
+        } else {
+            for cripto in listaCriptoViewModel {
+
+                if cripto.name.lowercased().contains(searchText.lowercased()) {
+                    filteredList.append(cripto)
+                }
+
+            }
+        }
+
+        self.tableBitcoins.reloadData()
+
+      }
 }
