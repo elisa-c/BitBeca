@@ -5,7 +5,6 @@
 //  Created by Renilson Moreira Ferreira on 15/04/21.
 //
 import UIKit
-// teste
 
 class ListaFavoritesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageIcon: UIImageView!

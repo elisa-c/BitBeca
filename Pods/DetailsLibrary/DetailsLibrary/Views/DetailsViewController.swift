@@ -18,18 +18,17 @@ public class DetailsViewController: UIViewController {
     @IBOutlet weak var lastDay: UILabel!
     @IBOutlet weak var lastMonth: UILabel!
     
-    public var teste: String = "valor inicial"
-    var sigla: String = "valor inicializado no módulo"
-    var isFavorite: Bool = false
+    public var sigla: String = "valor inicializado no módulo"
+    public var isFavorite: Bool = false
     let defaults = UserDefaults.standard
-    var arrayOfFav:[String] = []
+    var localArray:[String] = []
     @IBOutlet weak var button: UIButton!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
+
     public static var bundleUI: Bundle {
             var bundle: Bundle
             if let bundeLet = Bundle(identifier: "com.br.everis.DetailsLibrary") {
@@ -41,26 +40,26 @@ public class DetailsViewController: UIViewController {
         }
     
     public override func viewDidLayoutSubviews(){
-
         // modificações no layout vão aqui
     }
 
-//    public override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(true)
-//
-//        // recuperando o array de favoritos
-//        let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
-//        arrayOfFav = savedArray!
-//        print(arrayOfFav)
-//
-//        // se o array contém essa moeda, título do botão muda
-//        if let bool = savedArray?.contains("mais outro favorito") {
-//            if(bool == true) {
-//                button.setTitle("REMOVER", for: .normal)
-//                isFavorite = true
-//            }
-//        }
-//    }
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        // recuperando o array de favoritos
+        guard let savedArray = defaults.object(forKey: "arrayFav") as? [String] else {
+            defaults.setValue(localArray, forKey: "arrayFav")
+            return
+        }
+        
+        localArray = savedArray
+        
+        // se o array contém essa moeda, título do botão muda
+        if (savedArray.contains(sigla)) {
+                button.setTitle("REMOVER", for: .normal)
+                isFavorite = true
+        }
+    }
     
     public init(sigla: String) {
         super.init(nibName: nil, bundle: nil)
@@ -72,7 +71,7 @@ public class DetailsViewController: UIViewController {
 
         let provider = DetailsAPI()
         
-        provider.getDetails(abrevDetails: teste, completion: {(result) in
+        provider.getDetails(abrevDetails: sigla, completion: {(result) in
             DispatchQueue.main.async {
                 
                 self.coinAbbreviation?.text = result.abbreviation!
@@ -91,7 +90,7 @@ public class DetailsViewController: UIViewController {
                 
                 let newIconID = result.idIcon!.replacingOccurrences(of: "-", with: "")
 
-                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_16/\(newIconID).png"
+                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newIconID).png"
                 guard let imageURL = URL(string: baseURL) else {return}
                 self.coinImage.af_setImage(withURL: imageURL)
 
@@ -108,20 +107,23 @@ public class DetailsViewController: UIViewController {
     
     
     
-//    @IBAction func addOrRemove(_ sender: Any) {
-//        if(isFavorite) {
-//            if let index = arrayOfFav.firstIndex(of: "mais um outro favorito") {
-//                arrayOfFav.remove(at: index)
-//                defaults.setValue(arrayOfFav, forKey: "arrayTeste")
-//            }
-//            button.setTitle("ADICIONAR", for: .normal)
-//
-//        } else {
-//            arrayOfFav.append("outro favorito")
-//            defaults.setValue(arrayOfFav, forKey: "arrayTeste")
-//            viewWillAppear(true)
-//        }
-//    }
+    @IBAction func addOrRemove(_ sender: Any) {
+        
+        if(isFavorite) {
+            if let index = localArray.firstIndex(of: sigla) {
+                localArray.remove(at: index)
+                defaults.setValue(localArray, forKey: "arrayFav")
+            }
+            button.setTitle("ADICIONAR", for: .normal)
+
+        } else {
+            localArray.append(sigla)
+            defaults.setValue(localArray, forKey: "arrayFav")
+            viewWillAppear(true)
+        }
+        print(defaults.array(forKey: "arrayFav")!)
+        
+    }
     
     
 }

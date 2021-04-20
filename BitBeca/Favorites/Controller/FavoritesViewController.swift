@@ -1,13 +1,17 @@
 // FavoritesViewController.swift
 // BitBeca
 // Created by Renilson Moreira Ferreira on 15/04/21.
- import UIKit
+import UIKit
 
- class FavoritesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class FavoritesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var myDateFavorites: UILabel!
+
     let dataAtual = DateAtual()
+    let defaults = UserDefaults.standard
+    var localArray: [String] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -15,6 +19,16 @@
         myCollectionView.delegate = self
         navigationController?.setNavigationBarHidden(true, animated: false)
         myDateFavorites.text = dataAtual.getCurrentDateTime()
+
+        guard let currentFavs = defaults.array(forKey: "arrayFav") else {
+            defaults.setValue(localArray, forKey: "arrayFav")
+            return
+        }
+
+        print(currentFavs)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
     }
 
     // MARK: - CollectionView Favorites
@@ -35,4 +49,4 @@
         let larguraCell = collectionView.bounds.width / 2
         return CGSize(width: larguraCell-15, height: 160)
     }
- }
+}

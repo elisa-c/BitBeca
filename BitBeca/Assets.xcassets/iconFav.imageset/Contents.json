@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-star-24 (1).png",
+      "filename" : "MicrosoftTeams-image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "MicrosoftTeams-image-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "MicrosoftTeams-image-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

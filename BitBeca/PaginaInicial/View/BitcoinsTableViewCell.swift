@@ -13,6 +13,7 @@ class BitcoinsTableViewCell: UITableViewCell {
         @IBOutlet weak var labelNameBitcoin: UILabel!
         @IBOutlet weak var labelSiglaBitcoin: UILabel!
         @IBOutlet weak var labelPriceBitcoin: UILabel!
+        @IBOutlet weak var iconFavorite: UIImageView!
 
     func getIcon(idIcon: String) {
         let urlString = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_64/\(idIcon).png"

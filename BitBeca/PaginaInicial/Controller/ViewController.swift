@@ -21,14 +21,18 @@ enum CoresBitBeca {
 }
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
-    // MARK: - IBOutlets
-
-    @IBOutlet weak var pesquisarCriptomoedas: UISearchBar!
-    @IBOutlet weak var tableBitcoins: UITableView!
+    let defaults = UserDefaults.standard
     let dataAtual = DateAtual()
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
     var filteredList: [CriptoViewModel] = []
+    var localArray: [String] = []
+    var testeIsFav: Bool = false
+
+    // MARK: - IBOutlets
+
+    @IBOutlet weak var pesquisarCriptomoedas: UISearchBar!
+    @IBOutlet weak var tableBitcoins: UITableView!
     @IBOutlet weak var myLabelData: UILabel!
 
     // MARK: - Lifecycle
@@ -42,6 +46,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         getDataCriptomoedas()
         myLabelData.text = dataAtual.getCurrentDateTime()
         pesquisarCriptomoedas.delegate = self
+
+        guard let arrayFav = defaults.array(forKey: "arrayFav") else {
+            defaults.setValue(localArray, forKey: "arrayFav")
+            return
+        }
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -82,17 +92,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        tableBitcoins.reloadData()
+        print("didappear")
+    }
+
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return filteredList.count
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
 
         let backgroundView = UIView()
         backgroundView.backgroundColor = #colorLiteral(red: 0.0392, green: 0.4078, blue: 0, alpha: 1)
         cell.selectedBackgroundView = backgroundView
+
+        // siglaCell é igual a sigla dessa célula
+        let siglaCell = self.filteredList[indexPath.row].sigla
+
+        // pegando o array de favoritos do userdefaults
+        let arrayFav = defaults.array(forKey: "arrayFav") as! [String]
+
+        // se o array de favoritos contém a sigla dessa célula, adiciona a imagem de favorito; se não contém, retira a imagem
+        if arrayFav.contains(siglaCell) {
+            cell.iconFavorite.image = UIImage(named: "iconFav")
+        } else {
+            cell.iconFavorite.image = nil
+        }
 
         cell.labelNameBitcoin.text = filteredList[indexPath.row].name
         cell.labelSiglaBitcoin.text = filteredList[indexPath.row].sigla
@@ -110,7 +139,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         DispatchQueue.main.async {
             let sb = UIStoryboard(name: "Details", bundle: DetailsViewController.bundleUI)
             if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? DetailsViewController {
-                vc.teste = siglaDetalhes
+                vc.sigla = siglaDetalhes
                 vc.loadViewIfNeeded()
             self.navigationController?.pushViewController(vc, animated: true)
 

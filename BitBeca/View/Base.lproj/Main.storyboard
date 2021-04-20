@@ -74,6 +74,10 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGm-Oy-zjq">
+                                                    <rect key="frame" x="170" y="37" width="16" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="LLc-2D-27M" firstAttribute="leading" secondItem="VSj-Bj-klH" secondAttribute="leadingMargin" id="1JD-dA-LZw"/>
@@ -93,6 +97,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="iconFavorite" destination="PGm-Oy-zjq" id="fq9-QG-BO7"/>
                                             <outlet property="labelNameBitcoin" destination="PHy-Oq-fDd" id="WbJ-qn-g3J"/>
                                             <outlet property="labelPriceBitcoin" destination="x4q-LZ-ziv" id="5aQ-B8-lBP"/>
                                             <outlet property="labelSiglaBitcoin" destination="XhC-2J-szx" id="jzu-Fm-5s6"/>
@@ -349,7 +354,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-star-24 (1)" width="24" height="24"/>
+        <image name="icons8-star-24 (1)" width="12" height="12"/>
         <image name="icons8-us-dollar-24.png" width="24" height="24"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
