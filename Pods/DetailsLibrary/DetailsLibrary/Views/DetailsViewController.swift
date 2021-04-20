@@ -80,7 +80,7 @@ public class DetailsViewController: UIViewController {
                 guard let price = result.priceUsd else {return}
                 self.coinValue?.text = ("$ \(String(format: "%.2f", price))")
         
-                guard let lastHour = result.volume1DayUsd else {return}
+                guard let lastHour = result.volume1HrsUsd else {return}
                 self.lastHour?.text = ("$ \(String(format: "%.2f", lastHour))")
                 
                 guard let lastDay = result.volume1DayUsd else {return}
@@ -91,7 +91,7 @@ public class DetailsViewController: UIViewController {
                 
                 let newIconID = result.idIcon!.replacingOccurrences(of: "-", with: "")
 
-                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newIconID).png"
+                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_16/\(newIconID).png"
                 guard let imageURL = URL(string: baseURL) else {return}
                 self.coinImage.af_setImage(withURL: imageURL)
 

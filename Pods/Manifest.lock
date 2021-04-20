@@ -44,7 +44,7 @@ CHECKOUT OPTIONS:
     :commit: 00eab9161522fc749040ca874663eb279521ac00
     :git: https://github.com/elisa-c/Details.git
   DetailsLibrary:
-    :commit: fd698cee4f726367c12477a77b348afd626bacf8
+    :commit: a842a5361a8fe9514bab0ceff178141e29113230
     :git: https://github.com/elisa-c/DetailsLibrary.git
 
 SPEC CHECKSUMS:
