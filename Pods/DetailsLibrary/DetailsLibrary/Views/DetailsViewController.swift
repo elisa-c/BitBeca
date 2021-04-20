@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 public class DetailsViewController: UIViewController {
     
@@ -89,12 +90,17 @@ public class DetailsViewController: UIViewController {
             DispatchQueue.main.async {
                 print("--------------")
                 print("viewDidAppear dispatchQueue")
-                print(result.name!)
                 self.coinAbbreviation?.text = result.abbreviation!
                 self.coinValue?.text = String(format: "%.2f", result.priceUsd!)
                 self.lastHour?.text = String(format: "%.2f", result.volume1HrsUsd!)
                 self.lastDay?.text = String(format: "%.2f", result.volume1DayUsd!)
                 self.lastMonth?.text = String(format: "%.2f", result.volume1MthUsd!)
+                let newIconID = result.idIcon!.replacingOccurrences(of: "-", with: "")
+
+                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newIconID).png"
+                guard let imageURL = URL(string: baseURL) else {return}
+                self.coinImage.af_setImage(withURL: imageURL)
+
             }
 
         })

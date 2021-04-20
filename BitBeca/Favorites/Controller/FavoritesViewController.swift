@@ -12,10 +12,6 @@
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
         // viewAuxiliar.layer.cornerRadius = 8
-
-        let defaults = UserDefaults.standard
-        let arrayTeste = ["um favorito", "outro favorito"]
-        defaults.set(arrayTeste, forKey: "arrayTeste")
     }
 
     // MARK: - CollectionView Favorites

@@ -81,10 +81,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 guard let idIcon = criptomoeda[i].idIcon else {return}
                 let criptoAtual = CriptoViewModel(name: name, sigla: sigla, price: price, idIcon: idIcon)
                 self.listaCriptoViewModel.append(criptoAtual)
-                //                        print("Nome \(self.listaCriptoViewModel[i].name)")
-                //                        print("Sigla \(self.listaCriptoViewModel[i].sigla)")
-                //                        print("price \(String(format: "%.3f", self.listaCriptoViewModel[i].price))")
-                //                        print("IdIcont \(self.listaCriptoViewModel[i].idIcon)")
             }
             DispatchQueue.main.async {
                 self.tableBitcoins.reloadData()
@@ -118,26 +114,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
 
-//        let provider = DetailsLibrary.DetailsAPI.
-//
-//        provider.getDetails(abrevDetails: siglaDetalhes, completion: {(result) in
-//            print(result[0].name!)
-//        })
-
         DispatchQueue.main.async {
-//            let vc1 = DetailsLibrary.DetailsViewController(sigla: "valor enviado do app principal")
-//            let vc2 = DetailsLibrary.DetailsViewController.fromSB()
-//            let vc3 = DetailsViewController(sigla: "vc3 = DetailsViewController")
-
-            //            if let bundle = Bundle(identifier: "com.br.everis.DetailsLibrary") {
-            //                let sb = UIStoryboard(name: "Details", bundle: bundle)
-            //                let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as! DetailsViewController
-            //                vc.loadViewIfNeeded()
-            //                return vc
-            //            } else {
-            //                return UIViewController()
-            //            }
-
             let sb = UIStoryboard(name: "Details", bundle: DetailsViewController.bundleUI)
             if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? DetailsViewController {
                 vc.teste = siglaDetalhes

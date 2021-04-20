@@ -19,6 +19,11 @@
     "tag": "0.1.1"
   },
   "frameworks": "UIKit",
+  "dependencies": {
+    "AlamofireImage": [
+      "~> 3.4.0"
+    ]
+  },
   "source_files": "DetailsLibrary/**/*.{swift}",
   "resources": "DetailsLibrary/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
   "swift_versions": "5",
