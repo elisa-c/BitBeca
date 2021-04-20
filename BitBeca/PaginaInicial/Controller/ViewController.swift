@@ -24,11 +24,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - IBOutlets
 
     @IBOutlet weak var tableBitcoins: UITableView!
-    @IBAction func testeDetalhes(_ sender: Any) {
-        let vc = DetailsLibrary.DetailsViewController.self
-        let vcShow = vc.fromSB()
-        navigationController?.pushViewController(vcShow, animated: true)
-    }
 
     let myProvider = CriptomoedaProvider()
     var listaCriptoViewModel: [CriptoViewModel]=[]
@@ -123,21 +118,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
 
-        let provider = DetailsProvider()
+//        let provider = DetailsLibrary.DetailsAPI.
+//
+//        provider.getDetails(abrevDetails: siglaDetalhes, completion: {(result) in
+//            print(result[0].name!)
+//        })
 
-        provider.getDetails(abrevDetails: siglaDetalhes, completion: {(result) in
-            print(result[0].name!)
+        DispatchQueue.main.async {
+//            let vc1 = DetailsLibrary.DetailsViewController(sigla: "valor enviado do app principal")
+//            let vc2 = DetailsLibrary.DetailsViewController.fromSB()
+//            let vc3 = DetailsViewController(sigla: "vc3 = DetailsViewController")
 
-            DispatchQueue.main.async {
-                let vc = DetailsLibrary.DetailsViewController.self
-                let vcShow = vc.fromSB()
+            //            if let bundle = Bundle(identifier: "com.br.everis.DetailsLibrary") {
+            //                let sb = UIStoryboard(name: "Details", bundle: bundle)
+            //                let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as! DetailsViewController
+            //                vc.loadViewIfNeeded()
+            //                return vc
+            //            } else {
+            //                return UIViewController()
+            //            }
 
-                let testeFunc = vc.testando(DetailsViewController.init())
-                testeFunc("teste")
-                self.navigationController?.pushViewController(vcShow, animated: true)
+            let sb = UIStoryboard(name: "Details", bundle: DetailsViewController.bundleUI)
+            if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? DetailsViewController {
+                vc.teste = siglaDetalhes
+                vc.loadViewIfNeeded()
+
+                self.navigationController?.pushViewController(vc, animated: true)
+
             }
 
-        })
+        }
     }
 
 }
