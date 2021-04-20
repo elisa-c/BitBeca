@@ -88,19 +88,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-uz-bGr">
-                                        <rect key="frame" x="111" y="111" width="261" height="25"/>
+                                        <rect key="frame" x="107" y="111" width="261" height="25"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTz-ZV-Yyv">
-                                        <rect key="frame" x="111" y="218" width="261" height="25"/>
+                                        <rect key="frame" x="107" y="218" width="261" height="25"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C70-8f-EXu">
-                                        <rect key="frame" x="111" y="165" width="261" height="25"/>
+                                        <rect key="frame" x="107" y="165" width="261" height="25"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -123,19 +123,19 @@
                                     <constraint firstItem="fik-yl-gfa" firstAttribute="top" secondItem="6Kd-WX-Kck" secondAttribute="bottom" constant="28.5" id="6Ej-ix-bye"/>
                                     <constraint firstItem="C70-8f-EXu" firstAttribute="top" secondItem="Pa1-uz-bGr" secondAttribute="bottom" constant="29" id="6Fc-NK-lxD"/>
                                     <constraint firstItem="HV2-eY-GmA" firstAttribute="top" secondItem="fik-yl-gfa" secondAttribute="bottom" constant="27" id="8wq-bb-hkm"/>
-                                    <constraint firstItem="C70-8f-EXu" firstAttribute="leading" secondItem="fik-yl-gfa" secondAttribute="trailing" constant="22" id="Ccd-z2-Yyl"/>
-                                    <constraint firstItem="wTz-ZV-Yyv" firstAttribute="leading" secondItem="HV2-eY-GmA" secondAttribute="trailing" constant="15" id="FK5-tP-bly"/>
+                                    <constraint firstItem="C70-8f-EXu" firstAttribute="leading" secondItem="fik-yl-gfa" secondAttribute="trailing" constant="18" id="Ccd-z2-Yyl"/>
+                                    <constraint firstItem="wTz-ZV-Yyv" firstAttribute="leading" secondItem="HV2-eY-GmA" secondAttribute="trailing" constant="11" id="FK5-tP-bly"/>
                                     <constraint firstItem="Krx-mb-cD4" firstAttribute="top" secondItem="LMf-hO-TyS" secondAttribute="top" constant="31" id="KpE-8a-IwU"/>
-                                    <constraint firstAttribute="trailing" secondItem="C70-8f-EXu" secondAttribute="trailing" constant="3" id="LkV-i5-iZK"/>
-                                    <constraint firstItem="Pa1-uz-bGr" firstAttribute="leading" secondItem="6Kd-WX-Kck" secondAttribute="trailing" constant="11" id="M0U-qZ-fc4"/>
+                                    <constraint firstAttribute="trailing" secondItem="C70-8f-EXu" secondAttribute="trailing" constant="7" id="LkV-i5-iZK"/>
+                                    <constraint firstItem="Pa1-uz-bGr" firstAttribute="leading" secondItem="6Kd-WX-Kck" secondAttribute="trailing" constant="7" id="M0U-qZ-fc4"/>
                                     <constraint firstAttribute="trailing" secondItem="Krx-mb-cD4" secondAttribute="trailing" id="ZIC-8A-eh2"/>
                                     <constraint firstItem="wTz-ZV-Yyv" firstAttribute="top" secondItem="C70-8f-EXu" secondAttribute="bottom" constant="28" id="ap4-2L-sDx"/>
                                     <constraint firstItem="Krx-mb-cD4" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" id="bzu-ft-sTt"/>
                                     <constraint firstItem="fik-yl-gfa" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" constant="8" id="dOM-aX-Sfg"/>
                                     <constraint firstItem="6Kd-WX-Kck" firstAttribute="top" secondItem="Krx-mb-cD4" secondAttribute="bottom" constant="47" id="fl6-2Z-3ss"/>
-                                    <constraint firstAttribute="trailing" secondItem="wTz-ZV-Yyv" secondAttribute="trailing" constant="3" id="iT7-Mz-SpY"/>
+                                    <constraint firstAttribute="trailing" secondItem="wTz-ZV-Yyv" secondAttribute="trailing" constant="7" id="iT7-Mz-SpY"/>
                                     <constraint firstItem="6Kd-WX-Kck" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" constant="8" id="kkN-Y3-v1b"/>
-                                    <constraint firstAttribute="trailing" secondItem="Pa1-uz-bGr" secondAttribute="trailing" constant="3" id="ohv-Gk-oCC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pa1-uz-bGr" secondAttribute="trailing" constant="7" id="ohv-Gk-oCC"/>
                                     <constraint firstItem="Pa1-uz-bGr" firstAttribute="top" secondItem="Krx-mb-cD4" secondAttribute="bottom" constant="47" id="xYH-2l-ku6"/>
                                     <constraint firstItem="HV2-eY-GmA" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" constant="6" id="yN4-x6-joX"/>
                                 </constraints>
