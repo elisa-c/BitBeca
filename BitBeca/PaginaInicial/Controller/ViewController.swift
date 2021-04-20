@@ -70,7 +70,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func getDataCriptomoedas() {
-
         myProvider.getData { (results) in
 
             for i in 0...20 {

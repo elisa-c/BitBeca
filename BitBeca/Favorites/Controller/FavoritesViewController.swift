@@ -11,7 +11,8 @@
 
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
-        // viewAuxiliar.layer.cornerRadius = 8
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
     }
 
     // MARK: - CollectionView Favorites
