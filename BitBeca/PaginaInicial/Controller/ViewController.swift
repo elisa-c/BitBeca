@@ -89,7 +89,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidAppear(_ animated: Bool) {
         tableBitcoins.reloadData()
-        print("didappear")
     }
 
     // MARK: - TableView Tela Principal
