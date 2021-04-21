@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let defaults = UserDefaults.standard
     let dataAtual = DateAtual()
     let myProvider = CriptomoedaProvider()
-    public var listaCriptoViewModel: [CriptoViewModel]=[]
+    var listaCriptoViewModel: [CriptoViewModel]=[]
     var filteredList: [CriptoViewModel] = []
     var localArray: [String] = []
     var testeIsFav: Bool = false

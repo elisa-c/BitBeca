@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import BitBeca
+import Alamofire
 
 class BitBecaTests: XCTestCase {
 
@@ -28,6 +29,24 @@ class BitBecaTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testApi() {
+        
+        let expectation = XCTestExpectation(description: "Teste para api CoinAPI")
+
+        let api_key: String = "1F8A5E86-F1C9-41C7-B8BB-9DB1B81FDE7C"
+        
+        let url = URL(string: "https://rest.coinapi.io/v1/assets/?apikey=\(api_key)")!
+
+        Alamofire.request(url)
+            .response { data in
+                XCTAssertNotNil(data, "Nenhum dado foi baixado")
+                expectation.fulfill()
+        }
+
+        wait(for: [expectation], timeout: 2000.0)
+
     }
 
 }
