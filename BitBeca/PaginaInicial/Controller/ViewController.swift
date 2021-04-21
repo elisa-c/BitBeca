@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let defaults = UserDefaults.standard
     let dataAtual = DateAtual()
     let myProvider = CriptomoedaProvider()
-    public var listaCriptoViewModel: [CriptoViewModel]=[]
+    var listaCriptoViewModel: [CriptoViewModel]=[]
     var filteredList: [CriptoViewModel] = []
     var localArray: [String] = []
     var testeIsFav: Bool = false
@@ -83,6 +83,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             DispatchQueue.main.async {
                 self.tableBitcoins.reloadData()
+
             }
              AppModel.sharedInstance.sharedArray = self.listaCriptoViewModel
              self.filteredList = self.listaCriptoViewModel

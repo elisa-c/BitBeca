@@ -38,9 +38,7 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
-                self.myCollectionView.reloadData()
-            }
+
     }
 
     func getDataListaFavoritos(arrayFav: [String], arrayCripto: [CriptoViewModel]) {
