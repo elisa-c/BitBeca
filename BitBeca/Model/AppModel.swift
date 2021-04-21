@@ -8,8 +8,6 @@
 import Foundation
 
 class AppModel {
-
     static let sharedInstance = AppModel()
     var sharedArray: [CriptoViewModel]?
-
 }

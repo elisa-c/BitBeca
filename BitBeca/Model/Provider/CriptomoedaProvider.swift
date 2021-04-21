@@ -21,19 +21,14 @@ class CriptomoedaProvider {
                 switch response.statusCode {
                 case 400:
                     print("400 BadRequest -- There is something wrong with your request")
-                // break
                 case 401:
                     print("401 Unauthorized -- Your API key is wrong")
-                    // break
                 case 403:
                     print("403 Forbidden --Your API key doesnt't have enough privileges to access this resource")
-                    // break
                 case 429:
                     print("429 Too many requests -- You have exceeded your API key rate limits")
-                    // break
                 case 550:
                     print("550 No data -- You requested specific single item that we don't have at this")
-                    // break
                 default:
                     print("")
                     break

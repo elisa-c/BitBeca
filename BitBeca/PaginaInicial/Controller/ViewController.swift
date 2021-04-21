@@ -85,8 +85,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 self.tableBitcoins.reloadData()
 
             }
-             AppModel.sharedInstance.sharedArray = self.listaCriptoViewModel
-             self.filteredList = self.listaCriptoViewModel
+            AppModel.sharedInstance.sharedArray = self.listaCriptoViewModel
+            self.filteredList = self.listaCriptoViewModel
         }
     }
 
@@ -100,7 +100,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // MARK: - TableView Tela Principal
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return filteredList.count
     }
 
@@ -142,8 +141,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? DetailsViewController {
                 vc.sigla = siglaDetalhes
                 vc.loadViewIfNeeded()
-            self.navigationController?.pushViewController(vc, animated: true)
-
+                self.navigationController?.pushViewController(vc, animated: true)
             }
 
         }
@@ -155,14 +153,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             filteredList = listaCriptoViewModel
         } else {
             for cripto in listaCriptoViewModel {
-
                 if cripto.name.lowercased().contains(searchText.lowercased()) {
                     filteredList.append(cripto)
                 }
             }
         }
-
         self.tableBitcoins.reloadData()
-
-      }
+    }
 }

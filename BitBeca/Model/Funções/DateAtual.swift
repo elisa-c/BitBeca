@@ -8,7 +8,7 @@
 import UIKit
 
 class DateAtual: NSObject {
-// // MARK: - Funcção para gerar a data atual
+// MARK: - Função para gerar a data atual
       func getCurrentDateTime() -> String {
           let data = Date()
           let formatter = DateFormatter()

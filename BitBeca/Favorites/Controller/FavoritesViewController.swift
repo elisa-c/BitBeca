@@ -11,7 +11,6 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
     let dataAtual = DateAtual()
     let defaults = UserDefaults.standard
     var localArray: [String] = []
-    public var teste: [CriptoViewModel] = []
     var arrayCollectionFavorites: [CriptoViewModel] = []
 
     override func viewDidLoad() {
@@ -24,21 +23,15 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
             defaults.setValue(localArray, forKey: "arrayFav")
             return
         }
-        print(arrayFav)
-        var sharedArray = AppModel.sharedInstance.sharedArray
+        let sharedArray = AppModel.sharedInstance.sharedArray
         getDataListaFavoritos(arrayFav: arrayFav, arrayCripto: sharedArray!)
 
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.main.async {
                     self.myCollectionView.reloadData()
-
-                }
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-
+        }
     }
 
     func getDataListaFavoritos(arrayFav: [String], arrayCripto: [CriptoViewModel]) {
@@ -50,7 +43,6 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
                 myCollectionView.reloadData()
             }
         }
-        print("testeeee \(arrayCollectionFavorites)")
 
     }
     // MARK: - CollectionView Favorites
