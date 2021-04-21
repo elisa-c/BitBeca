@@ -25,7 +25,6 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
             return
         }
 
-        print(currentFavs)
     }
 
     override func viewDidAppear(_ animated: Bool) {

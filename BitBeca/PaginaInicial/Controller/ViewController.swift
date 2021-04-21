@@ -82,8 +82,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             DispatchQueue.main.async {
                 self.tableBitcoins.reloadData()
+
             }
-             self.filteredList = self.listaCriptoViewModel
+            self.filteredList = self.listaCriptoViewModel
         }
     }
 
@@ -129,7 +130,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
+//        let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
+        let siglaDetalhes = self.filteredList[indexPath.row].sigla
 
         DispatchQueue.main.async {
             let sb = UIStoryboard(name: "Details", bundle: DetailsViewController.bundleUI)
