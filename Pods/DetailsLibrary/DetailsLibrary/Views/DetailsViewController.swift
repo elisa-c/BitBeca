@@ -90,10 +90,9 @@ public class DetailsViewController: UIViewController {
                 
                 let newIconID = result.idIcon!.replacingOccurrences(of: "-", with: "")
 
-                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newIconID).png"
+                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_64/\(newIconID).png"
                 guard let imageURL = URL(string: baseURL) else {return}
                 self.coinImage.af_setImage(withURL: imageURL)
-                self.coinImage.heightAnchor
 
             }
 

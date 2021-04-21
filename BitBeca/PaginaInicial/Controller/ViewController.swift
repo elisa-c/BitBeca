@@ -24,10 +24,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let defaults = UserDefaults.standard
     let dataAtual = DateAtual()
     let myProvider = CriptomoedaProvider()
-    var listaCriptoViewModel: [CriptoViewModel]=[]
+    public var listaCriptoViewModel: [CriptoViewModel]=[]
     var filteredList: [CriptoViewModel] = []
     var localArray: [String] = []
     var testeIsFav: Bool = false
+    // var favorites = FavoritesViewController()
 
     // MARK: - IBOutlets
 
@@ -83,13 +84,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             DispatchQueue.main.async {
                 self.tableBitcoins.reloadData()
             }
+             AppModel.sharedInstance.sharedArray = self.listaCriptoViewModel
              self.filteredList = self.listaCriptoViewModel
         }
     }
 
+    public func getListaCripto() -> [CriptoViewModel] {
+        return self.listaCriptoViewModel
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         tableBitcoins.reloadData()
-        print("didappear")
     }
 
     // MARK: - TableView Tela Principal
@@ -129,7 +134,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let siglaDetalhes = listaCriptoViewModel[indexPath.row].sigla
+        let siglaDetalhes = self.filteredList[indexPath.row].sigla
 
         DispatchQueue.main.async {
             let sb = UIStoryboard(name: "Details", bundle: DetailsViewController.bundleUI)
