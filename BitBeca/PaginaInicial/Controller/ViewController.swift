@@ -102,7 +102,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBitcoin", for: indexPath) as! BitcoinsTableViewCell
 
         let backgroundView = UIView()
-        backgroundView.backgroundColor = #colorLiteral(red: 0.0392, green: 0.4078, blue: 0, alpha: 1)
+        backgroundView.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
         cell.selectedBackgroundView = backgroundView
 
         // siglaCell é igual a sigla dessa célula
@@ -153,7 +153,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 if cripto.name.lowercased().contains(searchText.lowercased()) {
                     filteredList.append(cripto)
                 }
-
             }
         }
 

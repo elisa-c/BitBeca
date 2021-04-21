@@ -30,7 +30,6 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
 
     override func viewDidAppear(_ animated: Bool) {
     }
-
     // MARK: - CollectionView Favorites
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10    }
