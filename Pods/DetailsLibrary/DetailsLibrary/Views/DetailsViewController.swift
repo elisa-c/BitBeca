@@ -26,7 +26,6 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     public static var bundleUI: Bundle {

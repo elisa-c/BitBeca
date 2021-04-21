@@ -20,12 +20,10 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
         myCollectionView.delegate = self
         navigationController?.setNavigationBarHidden(true, animated: false)
         myDateFavorites.text = dataAtual.getCurrentDateTime()
-
         guard let arrayFav = defaults.array(forKey: "arrayFav") as? [String] else {
             defaults.setValue(localArray, forKey: "arrayFav")
             return
         }
-
         print(arrayFav)
         var sharedArray = AppModel.sharedInstance.sharedArray
         getDataListaFavoritos(arrayFav: arrayFav, arrayCripto: sharedArray!)
@@ -33,7 +31,10 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+                    self.myCollectionView.reloadData()
 
+                }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -46,21 +47,22 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
 
         for i in 0...arrayCripto.count-1 {
             let sigla = arrayCripto[i].sigla
-
             if arrayFav.contains(sigla) {
                 arrayCollectionFavorites.append(arrayCripto[i])
+                myCollectionView.reloadData()
             }
-
         }
-        print(arrayCollectionFavorites)
-        myCollectionView.reloadData()
+        print("testeeee \(arrayCollectionFavorites)")
+
     }
     // MARK: - CollectionView Favorites
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayCollectionFavorites.count   }
+        return arrayCollectionFavorites.count
+
+    }
 
     // MARK: - Conteudo da linha
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellFavorites = collectionView.dequeueReusableCell(withReuseIdentifier: "cellFavorites", for: indexPath) as? ListaFavoritesCollectionViewCell
         cellFavorites?.labelNomeBitcoin.text = arrayCollectionFavorites[indexPath.item].name
         cellFavorites?.labelSiglaBitcoin.text = arrayCollectionFavorites[indexPath.item].sigla
@@ -68,6 +70,7 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
         let idIcon = arrayCollectionFavorites[indexPath.item].idIcon
         let id = idIcon.replacingOccurrences(of: "-", with: "")
         cellFavorites?.getIcon(idIcon: id)
+
         return cellFavorites!
     }
     // MARK: - Layout da collection
