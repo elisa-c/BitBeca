@@ -43,7 +43,7 @@ public class DetailsViewController: UIViewController {
     public override func viewDidLayoutSubviews(){
         // modificações no layout vão aqui
         
-        button.layer.borderWidth = 5
+        button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.cornerRadius = 8
     }
