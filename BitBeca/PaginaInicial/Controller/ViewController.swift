@@ -83,7 +83,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             DispatchQueue.main.async {
                 self.tableBitcoins.reloadData()
-
             }
             AppModel.sharedInstance.sharedArray = self.listaCriptoViewModel
             self.filteredList = self.listaCriptoViewModel

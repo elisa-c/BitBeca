@@ -40,11 +40,8 @@ class CriptomoedaProvider {
                 completion(criptomoeda)
             } catch {
                 print("Erro na decodificação: \(error)")
-
             }
-
         }
-
         task.resume()
     }
 

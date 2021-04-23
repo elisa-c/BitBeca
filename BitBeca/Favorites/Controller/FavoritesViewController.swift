@@ -19,23 +19,19 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
         myCollectionView.delegate = self
         navigationController?.setNavigationBarHidden(true, animated: false)
         myDateFavorites.text = dataAtual.getCurrentDateTime()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
         guard let arrayFav = defaults.array(forKey: "arrayFav") as? [String] else {
             defaults.setValue(localArray, forKey: "arrayFav")
             return
         }
-        let sharedArray = AppModel.sharedInstance.sharedArray
-        getDataListaFavoritos(arrayFav: arrayFav, arrayCripto: sharedArray!)
-
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
-                    self.myCollectionView.reloadData()
-        }
+        guard let sharedArray = AppModel.sharedInstance.sharedArray else {return}
+        getDataListaFavoritos(arrayFav: arrayFav, arrayCripto: sharedArray)
     }
 
     func getDataListaFavoritos(arrayFav: [String], arrayCripto: [CriptoViewModel]) {
-
+        arrayCollectionFavorites = []
         for i in 0...arrayCripto.count-1 {
             let sigla = arrayCripto[i].sigla
             if arrayFav.contains(sigla) {
