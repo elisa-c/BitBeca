@@ -26,6 +26,8 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     public static var bundleUI: Bundle {
@@ -40,10 +42,16 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLayoutSubviews(){
         // modificações no layout vão aqui
+        
+        button.layer.borderWidth = 5
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.cornerRadius = 8
     }
 
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.isNavigationBarHidden = true
+
 
         // recuperando o array de favoritos
         guard let savedArray = defaults.object(forKey: "arrayFav") as? [String] else {
@@ -60,12 +68,16 @@ public class DetailsViewController: UIViewController {
         }
     }
     
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     public init(sigla: String) {
         super.init(nibName: nil, bundle: nil)
         self.sigla = sigla
     }
 
-    
     public override func viewDidAppear(_ animated: Bool) {
 
         let provider = DetailsAPI()
@@ -114,15 +126,16 @@ public class DetailsViewController: UIViewController {
                 defaults.setValue(localArray, forKey: "arrayFav")
             }
             button.setTitle("ADICIONAR", for: .normal)
+          
 
         } else {
             localArray.append(sigla)
             defaults.setValue(localArray, forKey: "arrayFav")
             viewWillAppear(true)
         }
-       
+        print(defaults.array(forKey: "arrayFav")!)
+        
     }
     
+    
 }
-
-
