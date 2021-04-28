@@ -60,6 +60,25 @@ class BitBecaTests: XCTestCase {
         XCTAssertEqual(sigla, "BTC")
     }
     
-    
+    func testDeveRetornarTamanhoDoArray(){
+        var listaCripto:[CriptoViewModel] = []
+        let provider = CriptomoedaProvider()
+        let expectation = XCTestExpectation(description: "teste tamanho do array por parametro da completion")
+
+        provider.getData { (results) in
+            for i in 0...4 {
+                guard let name = results[i].name else {return}
+                guard let sigla = results[i].assetID else {return}
+                guard let price = results[i].priceUsd else {return}
+                guard let idIcon = results[i].idIcon else {return}
+                let criptoAtual = CriptoViewModel(name: name, sigla: sigla, price: price, idIcon: idIcon)
+                listaCripto.append(criptoAtual)
+        }
+            XCTAssertEqual(listaCripto.count, 5)
+            expectation.fulfill()
+    }
+        wait(for: [expectation], timeout: 10000.0)
+        
+}
 
 }

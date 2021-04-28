@@ -33,16 +33,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - IBOutlets
 
     @IBOutlet weak var pesquisarCriptomoedas: UISearchBar!
-    @IBOutlet weak var tableBitcoins: UITableView!
+    @IBOutlet weak var tableBitcoins: UITableView?
     @IBOutlet weak var myLabelData: UILabel!
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         cores(cor: .corBlack)
-        self.tableBitcoins.dataSource = self
-        self.tableBitcoins.delegate = self
-        self.tableBitcoins.backgroundColor = .black
+        self.tableBitcoins?.dataSource = self
+        self.tableBitcoins?.delegate = self
+        self.tableBitcoins?.backgroundColor = .black
         getDataCriptomoedas()
         myLabelData.text = dataAtual.getCurrentDateTime()
         pesquisarCriptomoedas.delegate = self
@@ -81,8 +81,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let criptoAtual = CriptoViewModel(name: name, sigla: sigla, price: price, idIcon: idIcon)
                 self.listaCriptoViewModel.append(criptoAtual)
             }
+
             DispatchQueue.main.async {
-                self.tableBitcoins.reloadData()
+                self.tableBitcoins?.reloadData()
             }
             AppModel.sharedInstance.sharedArray = self.listaCriptoViewModel
             self.filteredList = self.listaCriptoViewModel
@@ -90,7 +91,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        tableBitcoins.reloadData()
+        tableBitcoins?.reloadData()
     }
 
     // MARK: - TableView Tela Principal
@@ -153,6 +154,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
         }
-        self.tableBitcoins.reloadData()
+        self.tableBitcoins?.reloadData()
     }
 }
