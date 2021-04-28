@@ -48,5 +48,16 @@ class BitBecaTests: XCTestCase {
         wait(for: [expectation], timeout: 2000.0)
 
     }
+    
+    
+    func testDeveRetornarPrimeiraSiglaDaChamadaDaApi(){
+        let viewController = ViewController()
+        viewController.getDataCriptomoedas()
+        let lista = viewController.listaCriptoViewModel
+        guard let sigla = lista.first?.sigla else {return}
+        
+        XCTAssertEqual(sigla, "BTC")
+        
+    }
 
 }

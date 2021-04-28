@@ -89,10 +89,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 
-    public func getListaCripto() -> [CriptoViewModel] {
-        return self.listaCriptoViewModel
-    }
-
     override func viewDidAppear(_ animated: Bool) {
         tableBitcoins.reloadData()
     }
