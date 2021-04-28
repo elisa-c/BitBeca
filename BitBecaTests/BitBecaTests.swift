@@ -10,13 +10,17 @@ import XCTest
 import Alamofire
 
 class BitBecaTests: XCTestCase {
+    
+    var viewController: ViewController!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() {
+        super.setUp()
+        viewController = ViewController()
+        viewController.getDataCriptomoedas()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
     }
 
     func testExample() throws {
@@ -51,13 +55,11 @@ class BitBecaTests: XCTestCase {
     
     
     func testDeveRetornarPrimeiraSiglaDaChamadaDaApi(){
-        let viewController = ViewController()
-        viewController.getDataCriptomoedas()
         let lista = viewController.listaCriptoViewModel
         guard let sigla = lista.first?.sigla else {return}
-        
         XCTAssertEqual(sigla, "BTC")
-        
     }
+    
+    
 
 }
